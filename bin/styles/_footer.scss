@@ -1,3 +1,45 @@
+/*Elementos del Footer*/
+
+footer{
+    width: auto;
+    height: 60vh;
+}
+
 .footer{
     background-color: bisque;
+
+    &__section{
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+
+        &--list li{
+      
+        display: table-cell;
+        width: 50%;
+        }
+    }
+
+    &__items{
+        width: 33%;
+    }
+   
+
+    &__img{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+
+        & img{
+            height: auto;
+            max-width: 100%;
+        }
+
+        
+        img{
+            
+        }
+    }
 }

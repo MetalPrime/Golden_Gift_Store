@@ -30,8 +30,7 @@ main{
     background-color: #00ff00;
 }
 
-footer{
-    width: auto;
-    height: 50vh;
-}
+@import '_footer.scss';
+
+
 

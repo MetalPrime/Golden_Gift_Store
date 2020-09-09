@@ -275,8 +275,53 @@ main {
   background-color: #00ff00;
 }
 
+/*Elementos del Footer*/
 footer {
   width: auto;
-  height: 50vh;
+  height: 60vh;
+}
+
+.footer {
+  background-color: bisque;
+}
+
+.footer__section {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__section--list li {
+  display: table-cell;
+  width: 50%;
+}
+
+.footer__items {
+  width: 33%;
+}
+
+.footer__img {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__img img {
+  height: auto;
+  max-width: 100%;
 }
 /*# sourceMappingURL=home.css.map */
