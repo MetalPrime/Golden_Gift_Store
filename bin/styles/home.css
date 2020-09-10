@@ -261,6 +261,12 @@ nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: bisque;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
@@ -288,20 +294,26 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 6.375rem;
-  margin-right: 6.375rem;
+  padding-left: 6.375rem;
+  padding-right: 6.375rem;
+  padding-top: 3.188rem;
 }
 
-.footer__section li::marker {
-  display: none;
-}
-
-.footer__section--list {
-  display: table-cell;
+.footer__section li {
+  list-style-type: none;
 }
 
 .footer__items {
   width: 33%;
+}
+
+.footer__items--list li {
+  display: table-cell;
+}
+
+.footer__items--list li a {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .footer__img {

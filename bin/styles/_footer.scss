@@ -13,20 +13,29 @@ footer{
         height: 60%;
         display: flex;
         flex-direction: row;
-        margin-left: 6.375rem;
-        margin-right: 6.375rem;
+        padding-left: 6.375rem;
+        padding-right: 6.375rem;
+        padding-top: 3.188rem;
     
-        & li::marker{
-            display: none;
+        & li{
+            list-style-type: none;
+            
         }
 
-        &--list {
-        display: table-cell;
-        }
+        
     }
 
     &__items{
         width: 33%;
+
+        &--list li{
+            display: table-cell;
+
+            & a{
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+            }
+            }
     }
    
 
