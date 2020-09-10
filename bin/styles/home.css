@@ -263,12 +263,6 @@ nav ul {
   background-color: bisque;
 }
 
-li {
-  justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 main {
   width: auto;
   height: 100vh;
@@ -294,11 +288,16 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 6.375rem;
+  margin-right: 6.375rem;
 }
 
-.footer__section--list li {
+.footer__section li::marker {
+  display: none;
+}
+
+.footer__section--list {
   display: table-cell;
-  width: 50%;
 }
 
 .footer__items {
@@ -316,12 +315,13 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .footer__img img {
-  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 100%;
+  padding: 1rem;
+  height: 100%;
 }
 /*# sourceMappingURL=home.css.map */

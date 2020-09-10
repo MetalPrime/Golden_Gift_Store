@@ -7,16 +7,21 @@ footer{
 
 .footer{
     background-color: bisque;
+   
 
     &__section{
         height: 60%;
         display: flex;
         flex-direction: row;
+        margin-left: 6.375rem;
+        margin-right: 6.375rem;
+    
+        & li::marker{
+            display: none;
+        }
 
-        &--list li{
-      
+        &--list {
         display: table-cell;
-        width: 50%;
         }
     }
 
@@ -30,16 +35,15 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        object-fit: contain;
+        
 
         & img{
-            height: auto;
+            object-fit: contain;
             max-width: 100%;
+            padding: 1rem;
+            height: 100%;
         }
 
         
-        img{
-            
-        }
     }
 }
