@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.buttom{
+    width: 12.5rem;
+    font-family: $principal-font;
+    background-color: #4088BD;
+    color: #ffffff;
+    font-size: $text-size;
+    border-radius: 30px;
+}

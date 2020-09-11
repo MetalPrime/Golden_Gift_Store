@@ -19,6 +19,7 @@ nav ul{
     background-color: bisque;
     justify-content: space-evenly;
     align-items: center;
+    object-fit: contain;
 
 }
 
@@ -32,6 +33,7 @@ main{
 
 @import '_navbar.scss';
 @import '_footer.scss';
+@import '_buttom.scss';
 
 
 

@@ -1,25 +1,41 @@
 /*Elementos del Footer*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
 
 footer{
     width: auto;
-    height: 60vh;
+    font-family: $principal-font;
+    
 }
 
 .footer{
     background-color: bisque;
+
+    & p{
+        font-size: $text-size;
+    }
    
 
     &__section{
-        height: 60%;
+
+        width: auto;
         display: flex;
         flex-direction: row;
         padding-left: 6.375rem;
         padding-right: 6.375rem;
         padding-top: 3.188rem;
+
+        & ul{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            display: flex;
+            object-fit: contain;
+        }
     
         & li{
             list-style-type: none;
-            
         }
 
         
@@ -28,13 +44,22 @@ footer{
     &__items{
         width: 33%;
 
+        & h3{
+            font-size: 24px;
+            padding-bottom: 2rem;;
+        }
+
         &--list li{
             display: table-cell;
 
-            & a{
-                padding-top: 1.25rem;
-                padding-bottom: 1.25rem;
+            ul{
+                padding-right: 1.5rem;
             }
+            
+            a {
+                font-size: $text-size;
+            }
+            
             }
     }
    
@@ -46,7 +71,7 @@ footer{
         align-items: center;
         
 
-        & img{
+        img{
             object-fit: contain;
             max-width: 100%;
             padding: 1rem;
