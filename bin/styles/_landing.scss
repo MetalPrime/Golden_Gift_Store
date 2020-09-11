@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.landing {
+    padding-left: 6.375rem;
+    padding-right: 6.375rem;
+    display: flex;
+    flex-direction: row;
+
+    &__contact{
+        width: 5%;
+        display: flex;
+        align-items: flex-end;
+
+        li{
+            position: relative;
+            ::backdrop{
+                
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 120px;
+                background-color: seashell;
+                top: 240px;
+            }
+        }
+    }
+
+    &__content{
+        width: 47.5%;
+    }
+
+    &__img{
+        width:47.5%;
+    }
+}

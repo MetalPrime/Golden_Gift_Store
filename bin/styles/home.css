@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -263,6 +264,8 @@ main {
   height: 20%;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  padding-left: 6.375rem;
+  padding-right: 6.375rem;
 }
 
 .navbar ul {
@@ -275,9 +278,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar ul li {
@@ -303,6 +306,58 @@ main {
   -o-object-fit: contain;
      object-fit: contain;
   padding: 1rem;
+}
+
+.landing {
+  padding-left: 6.375rem;
+  padding-right: 6.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing__contact {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.landing__contact li {
+  position: relative;
+}
+
+.landing__contact li ::-webkit-backdrop {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 120px;
+  background-color: seashell;
+  top: 240px;
+}
+
+.landing__contact li ::backdrop {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 120px;
+  background-color: seashell;
+  top: 240px;
+}
+
+.landing__content {
+  width: 47.5%;
+}
+
+.landing__img {
+  width: 47.5%;
 }
 
 /*Elementos del Footer*/
