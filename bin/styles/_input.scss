@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.input{
+    width: 12.5rem;
+    font-family: $principal-font;
+    background-color: bisque;
+    font-size: $text-size;
+    border-radius: 30px;
+}

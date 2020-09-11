@@ -12,6 +12,7 @@
 -------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -368,6 +369,14 @@ footer {
   font-family: "Poppins", sans-serif;
   background-color: #4088BD;
   color: #ffffff;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.input {
+  width: 12.5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: bisque;
   font-size: 16px;
   border-radius: 30px;
 }
