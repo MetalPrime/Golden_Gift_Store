@@ -29,6 +29,9 @@ $text-size: 16px;
                 justify-content: center;
                 align-items: center;
                 display: flex;
+                font-size: $text-size;
+                text-decoration: none;
+                color: rgb(255,255,255);
 
                 img{
                     width: auto;

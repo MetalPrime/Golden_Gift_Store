@@ -27,14 +27,23 @@ footer{
         padding-right: 6.375rem;
         padding-top: 3.188rem;
 
-        & ul{
+        & li{
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             display: flex;
             object-fit: contain;
+
+            p{
+                align-items: center;
+                padding-left: 0.5rem;
+            }
+
+            img{
+                height: fit-content;
+            }
         }
     
-        & li{
+        & ul{
             list-style-type: none;
         }
 
@@ -49,15 +58,17 @@ footer{
             padding-bottom: 2rem;;
         }
 
-        &--list li{
+        &--list ul{
             display: table-cell;
 
-            ul{
+            li{
                 padding-right: 1.5rem;
             }
             
             a {
                 font-size: $text-size;
+                text-decoration: none;
+                color: rgb(61, 15, 15);
             }
             
             }

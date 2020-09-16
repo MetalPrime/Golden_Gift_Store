@@ -13,26 +13,31 @@ $text-size: 16px;
         width: 5%;
         display: flex;
         align-items: flex-end;
+        position: relative;
 
-        li{
-            position: relative;
-            ::backdrop{
-                
-                content: '';
-                position: absolute;
-                width: 3px;
-                height: 120px;
-                background-color: seashell;
-                top: 240px;
-            }
+        ul{
+            height: 100%;
+        }
+
+        hr {
+            transform: rotate(90deg);
+            border: 10px;
+            border-color: white;
+            //width: 80px;
         }
     }
 
     &__content{
         width: 47.5%;
+        text-align: center;
+        color: seashell;
     }
 
     &__img{
         width:47.5%;
+
+        img{
+            max-width: 80%;
+        }
     }
 }
