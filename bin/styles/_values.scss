@@ -11,7 +11,11 @@ $text-size: 16px;
     padding-left: 102px;
 
     &__title{
-        height: 15vh;
+        height: 15%;
+        font-size: 35px;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
     }
 
     & section {
@@ -19,10 +23,26 @@ $text-size: 16px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 70%;
     }
 
     &__items{
+        height: 100%;
+        position: relative;
 
+        &--entrega{
+            img{
+                padding-top: 20%;
+            }
+        }
+
+        & p{
+            font-family: $principal-font;
+            font-size: 24px;
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+        }
     }
 
 }
