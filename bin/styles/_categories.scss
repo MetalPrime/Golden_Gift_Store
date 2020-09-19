@@ -12,7 +12,7 @@ $text-size: 16px;
     }
 
     &__container{
-        background-color: blue; 
+        background-color: beige; 
         width: 100%; height: 90vh;
         display: flex; 
         flex-direction: row;
@@ -26,7 +26,6 @@ $text-size: 16px;
 
         width: 50%;
         height: 100%;
-        background-color: lime;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -36,10 +35,12 @@ $text-size: 16px;
 
     &__element{
         padding: 15px;
+        background-size: cover;
+        background-position: center;
         
 
         &--bandeja{
-            background-color: khaki;
+            background-image: url("./../../data/img/back-bandejas.jpeg");
             width: 100%;
             flex-grow: 2;
             /* Arriba | Derecha | Abajo | Izquierda */
@@ -47,7 +48,7 @@ $text-size: 16px;
         }
     
         &--ancheta{
-            background-color: lightblue;
+            background-image: url("./../../data/img/back-anchetas.jpeg");
             width: auto;
             flex-grow: 1;  
              /* Arriba | Derecha | Abajo | Izquierda */
@@ -55,7 +56,7 @@ $text-size: 16px;
              }
     
         &--desayuno{
-            background-color:  lightpink;
+            background-image: url("./../../data/img/back-desayunos.jpeg");
             width: auto;
             flex-grow: 1;  
              /* Arriba | Derecha | Abajo | Izquierda */
@@ -63,7 +64,7 @@ $text-size: 16px;
         }
     
         &--merienda{
-            background-color: azure;
+            background-image: url("./../../data/img/back-meriendas.jpeg");
             height: auto;
             width: 100%;
             margin: 15px;
