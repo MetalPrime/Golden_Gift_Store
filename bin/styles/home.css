@@ -15,6 +15,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -357,6 +358,86 @@ main {
 
 .landing__img img {
   max-width: 80%;
+}
+
+.categories__title {
+  background-color: beige;
+  width: 100%;
+  height: 10vh;
+}
+
+.categories__container {
+  background-color: blue;
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 102px;
+  padding-left: 102px;
+}
+
+.categories__div {
+  width: 50%;
+  height: 100%;
+  background-color: lime;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+}
+
+.categories__element {
+  padding: 15px;
+}
+
+.categories__element--bandeja {
+  background-color: khaki;
+  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: 15px 0 7.5px 15px;
+}
+
+.categories__element--ancheta {
+  background-color: lightblue;
+  width: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: 7.5px 0 15px 15px;
+}
+
+.categories__element--desayuno {
+  background-color: lightpink;
+  width: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: 7.5px 0 15px 15px;
+}
+
+.categories__element--merienda {
+  background-color: azure;
+  height: auto;
+  width: 100%;
+  margin: 15px;
 }
 
 /*Elementos del Footer*/

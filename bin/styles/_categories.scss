@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.categories{
+    
+    &__title{
+        background-color: beige; 
+        width: 100%; 
+        height: 10vh;
+    }
+
+    &__container{
+        background-color: blue; 
+        width: 100%; height: 90vh;
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 102px;
+        padding-left: 102px;
+
+    }
+
+    &__div{
+
+        width: 50%;
+        height: 100%;
+        background-color: lime;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: auto;
+        
+    }
+
+    &__element{
+        padding: 15px;
+        
+
+        &--bandeja{
+            background-color: khaki;
+            width: 100%;
+            flex-grow: 2;
+            /* Arriba | Derecha | Abajo | Izquierda */
+            margin: 15px 0 7.5px 15px;
+        }
+    
+        &--ancheta{
+            background-color: lightblue;
+            width: auto;
+            flex-grow: 1;  
+             /* Arriba | Derecha | Abajo | Izquierda */
+             margin: 7.5px 0 15px 15px;
+             }
+    
+        &--desayuno{
+            background-color:  lightpink;
+            width: auto;
+            flex-grow: 1;  
+             /* Arriba | Derecha | Abajo | Izquierda */
+             margin: 7.5px 0 15px 15px;
+        }
+    
+        &--merienda{
+            background-color: azure;
+            height: auto;
+            width: 100%;
+            margin: 15px;
+        }
+    }
+    
+
+
+
+
+
+    
+}
