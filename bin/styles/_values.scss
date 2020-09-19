@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.values{
+
+    height: 60vh;
+    width: auto;
+    padding-right: 102px;
+    padding-left: 102px;
+
+    &__title{
+        height: 15vh;
+    }
+
+    & section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__items{
+
+    }
+
+}
