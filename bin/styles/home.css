@@ -470,6 +470,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .experiences__title {
@@ -488,13 +489,18 @@ main {
 }
 
 .experiences__inputs {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
   padding-left: 102px;
   padding-right: 51px;
+  padding-bottom: 51px;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+}
+
+.experiences__inputs input {
+  width: 100%;
 }
 
 .experiences__interaction {
