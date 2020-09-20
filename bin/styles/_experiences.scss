@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.experiences{
+    width: auto;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+
+    &__items{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        padding-top: 51px;
+        padding-left: 102px;
+        padding-right: 51px;
+        padding-bottom: 51px;
+        
+        font-size: 35px;
+    }
+
+    &__text{
+        padding-left: 102px;
+        padding-right: 51px;
+        font-size: 24px;
+        font-family:  $principal-font ;
+    }
+
+    &__inputs{
+        justify-content: end;
+        padding-left: 102px;
+        padding-right: 51px;
+        font-size: 20px;
+        font-family:  $principal-font ;
+    }
+
+    &__interaction{
+        width: 65%;
+        height: 100%;
+        background-image: url(./../../data/img/back-experiences.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
