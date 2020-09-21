@@ -462,20 +462,32 @@ main {
           align-items: center;
   padding: 10px;
   text-align: center;
+  height: 8%;
 }
 
 .products__section {
   background-color: blue;
   width: 100%;
-  height: auto;
+  height: 42%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 15px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.products__item {
+  background-color: blueviolet;
+  width: 33%;
+  height: 100%;
+  margin-right: 51px;
+  position: relative;
 }
 
 .experiences {
