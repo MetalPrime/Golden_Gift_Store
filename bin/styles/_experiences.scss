@@ -57,9 +57,22 @@ $text-size: 16px;
         background-size: cover;
         background-position: center;
         display: flex;
+        position: relative;
+
 
         img{
             object-fit: contain;
+
+            &:nth-child(-n+3){
+        position: absolute;
+        //left: 0;
+        opacity: 0;
+        left: 15.5%;
+        justify-content: center;
+        //width: 0%;
+        height: 100%;
+        //object-position: left;
+            }
         }
     }
 }
