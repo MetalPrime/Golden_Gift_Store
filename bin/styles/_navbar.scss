@@ -45,3 +45,21 @@ $text-size: 16px;
     }
 
 }
+
+@media screen and(max-width: 600px) {
+    .navbar{
+
+        ul{
+            display: flex;
+            flex-direction: column;
+
+            li {
+                &:nth-of-type(3n+4){
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    
+}
