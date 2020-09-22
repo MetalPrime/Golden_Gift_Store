@@ -1,8 +1,18 @@
 const btn_nav = document.querySelector('.burgermenu__btn');
 console.log(btn_nav);
+
 btn_nav.addEventListener('click',()=>{
   console.log("está clickeando");
-  btn_nav.classList.add('burgermenu__btn--clicked');
+
+  if(btn_nav.classList.contains('burgermenu__btn--clicked')){
+    btn_nav.classList.remove('burgermenu__btn--clicked');
+    btn_nav.classList.remove('burgermenu__btn--collapsed')
+  } else{
+    btn_nav.classList.add('burgermenu__btn--clicked');
+    btn_nav.classList.add('burgermenu__btn--collapsed');
+  }
+  
+  
 })
 
 
@@ -21,13 +31,9 @@ function handleSlider () {
   //img1.style.width = (slider1.value * 100) + '%';
 }
 
-slider.forEach(element => {
+slider.forEach((element,index) => {
+  
     element.addEventListener('input', () =>{
-        img.forEach(ele => {
-            if(element === ele){
-                ele.style.opacity = element.value;
-            }
-            
-          }); 
+        img[index].style.opacity = element.value;
     });
 });

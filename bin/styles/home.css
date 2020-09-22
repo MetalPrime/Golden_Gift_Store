@@ -396,6 +396,14 @@ main {
           transform: rotate(-135deg);
 }
 
+.burgermenu__btn--collapsed span:nth-child(1),
+.burgermenu__btn--collapsed span:nth-child(3) {
+  -webkit-transition: -webkit-transform .35s ease-in;
+  transition: -webkit-transform .35s ease-in;
+  transition: transform .35s ease-in;
+  transition: transform .35s ease-in, -webkit-transform .35s ease-in;
+}
+
 @media screen and (max-width: 600px) {
   .burgermenu__logo {
     display: block;
