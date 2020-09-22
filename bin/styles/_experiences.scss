@@ -56,5 +56,10 @@ $text-size: 16px;
         background-image: url(./../../data/img/back-experiences.jpg);
         background-size: cover;
         background-position: center;
+        display: flex;
+
+        img{
+            object-fit: contain;
+        }
     }
 }
