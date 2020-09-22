@@ -1,0 +1,71 @@
+.clients{
+    width: auto;
+    height: 60vh;
+    padding-right: 102px;
+    padding-left: 102px;
+    background-color: beige;
+
+    &__title{
+        height: 15%;
+        font-size: 35px;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__elements{
+        height: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &:first-child{
+            margin-right: 26px;
+        }
+    }
+
+    &__items{
+        width: 45%;
+        height: auto;
+        background-color: burlywood;
+        margin-bottom: 51px;
+        object-fit: contain;
+
+        h2{
+            width: auto;
+            text-align: center;
+            height: 20%;
+            font-size: 27px;
+            padding-top: 13px;
+            padding-left: 51px;
+            padding-right: 51px;
+        }
+        
+        div{
+            width: auto;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            object-fit: contain;
+            overflow: auto;
+            img{
+                padding: 10px;
+                width: 30%;
+                max-height: fit-content;
+                border-radius: 100%;
+            }
+
+            p{
+                font-size: 20px;
+            }
+        }
+
+        
+    }
+
+    &__phrases{
+
+    }
+}
