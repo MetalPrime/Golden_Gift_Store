@@ -382,8 +382,8 @@ main {
           transform: rotate(0deg);
 }
 
-.burgermenu__btn--clicked span:nth-child(1),
-.burgermenu__btn--clicked span:nth-child(3) {
+.burgermenu__btn span:nth-child(1),
+.burgermenu__btn span:nth-child(3) {
   -webkit-transition: -webkit-transform .35s ease-in-out;
   transition: -webkit-transform .35s ease-in-out;
   transition: transform .35s ease-in-out;
@@ -417,6 +417,9 @@ main {
   transition: -webkit-transform .35s ease-in;
   transition: transform .35s ease-in;
   transition: transform .35s ease-in, -webkit-transform .35s ease-in;
+  position: absolute;
+  right: 25px;
+  top: 25px;
 }
 
 @media screen and (max-width: 600px) {
@@ -851,6 +854,9 @@ main {
     padding-right: 51px;
     padding-left: 51px;
   }
+  .values__title {
+    font-size: 27px;
+  }
   .values__stripe {
     display: block;
     width: 100%;
@@ -999,6 +1005,10 @@ main {
   .clients__items h2 {
     padding: 10px 5px;
     font-size: 20px;
+  }
+  .clients__items div img {
+    margin-top: 5px;
+    width: 60%;
   }
 }
 
