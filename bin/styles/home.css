@@ -776,7 +776,7 @@ main {
   text-align: center;
 }
 
-.values section {
+.values__stripe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,6 +808,44 @@ main {
   position: absolute;
   text-align: center;
   bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .values {
+    padding-right: 51px;
+    padding-left: 51px;
+  }
+  .values__stripe {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  .values__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-transition: -webkit-transform .6s ease;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease, -webkit-transform .6s ease;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .values__items img {
+    max-width: 50%;
+    height: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .values__items p {
+    margin: 10px;
+  }
 }
 
 .clients {

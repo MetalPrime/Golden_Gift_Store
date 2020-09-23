@@ -43,3 +43,34 @@ slider.forEach((element,index) => {
         img[index].style.opacity = element.value;
     });
 });
+
+//////////////////////////////////
+
+
+let current = 0;
+const values_stripe = document.querySelector('.values__stripe');
+const values_items = document.querySelectorAll('.values__items');
+
+
+if(window.matchMedia("(max-width: 600px)").matches){
+  values_stripe.addEventListener('click', function () {
+    current++;
+    if(current >= values_stripe.children.length) {
+      current = 0;
+      values_items[current].style.transform = 'translate(0px, -' + (height * current) + 'px)';
+    }
+    const height = values_stripe.clientHeight;
+    values_items[current-1].style.transform = 'translate(0px, -' + (height * current-1) + 'px)';
+    values_items[current].style.transform = 'translate(0px, -' + (height * current) + 'px)';
+  });
+}
+
+
+
+/*values_stripe.setAttribute('max', values_stripe.children.length - 1);
+values_stripe.addEventListener('click', function() {
+  const heiight = values_stripe.clientHeight;
+  const value = values_stripe.children.length;
+  values_items.style.transform = '0px,translate(-' + (heiight * value) + 'px )';
+  console.log(value)
+});*/

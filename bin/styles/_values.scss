@@ -20,12 +20,13 @@ $text-size: 16px;
         text-align: center;
     }
 
-    & section {
+    &__stripe {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: 70%;
+        
     }
 
     &__items{
@@ -38,7 +39,7 @@ $text-size: 16px;
             }
         }
 
-        & p{
+         p{
             font-family: $principal-font;
             font-size: 24px;
             position: absolute;
@@ -47,4 +48,43 @@ $text-size: 16px;
         }
     }
 
+}
+
+@media screen and(max-width: 600px) {
+    .values{
+
+        padding-right: 51px;
+        padding-left: 51px;
+
+        &__title{
+
+        }
+
+        &__stripe{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &__items{
+            display: flex;
+            width: 100%;
+            transition: transform .6s ease;
+            object-fit: contain;
+            justify-content: center;
+            align-content: space-between;
+            
+        img {
+            max-width: 50%;
+            height: 70%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        p {
+            margin:10px;
+            }
+        }
+        
+    }
+    
 }
