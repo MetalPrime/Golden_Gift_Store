@@ -972,6 +972,36 @@ main {
   font-size: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .clients {
+    padding-right: 51px;
+    padding-left: 51px;
+  }
+  .clients__title {
+    height: 20%;
+    font-size: 27px;
+  }
+  .clients__elements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__items {
+    height: 90%;
+    width: 100%;
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .clients__items h2 {
+    padding: 10px 5px;
+    font-size: 20px;
+  }
+}
+
 /*Elementos del Footer*/
 footer {
   width: auto;
