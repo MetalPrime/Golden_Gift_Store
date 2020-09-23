@@ -79,4 +79,38 @@ background-image: url('./../../data/img/product6.jpeg');
             height: 100%;
         }
     }
+
+    &__rating{
+        height:  -webkit-fill-available;
+        width: auto;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .products{
+        padding: 26px 51px;
+
+        &__title{
+
+        }
+        &__section{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+        &__item{
+            display: block;
+            width: 100%;
+        }
+
+        &__options{
+            justify-content: space-evenly;
+
+        }
+
+        &__ratiing{
+            width: auto;
+        }
+    }
 }
