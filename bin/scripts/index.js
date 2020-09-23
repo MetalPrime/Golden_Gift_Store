@@ -1,4 +1,5 @@
 const btn_nav = document.querySelector('.burgermenu__btn');
+const navbar = document.querySelector('.navbar');
 console.log(btn_nav);
 
 btn_nav.addEventListener('click',()=>{
@@ -6,10 +7,15 @@ btn_nav.addEventListener('click',()=>{
 
   if(btn_nav.classList.contains('burgermenu__btn--clicked')){
     btn_nav.classList.remove('burgermenu__btn--clicked');
-    btn_nav.classList.remove('burgermenu__btn--collapsed')
+    btn_nav.classList.remove('burgermenu__btn--collapsed');
+
+    navbar.classList.remove('navbar--isActived');
+
   } else{
     btn_nav.classList.add('burgermenu__btn--clicked');
     btn_nav.classList.add('burgermenu__btn--collapsed');
+
+    navbar.classList.add('navbar--isActived');
   }
   
   

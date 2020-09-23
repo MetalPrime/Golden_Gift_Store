@@ -50,8 +50,8 @@ $text-size: 16px;
     .navbar{
 
         ul{
-            display: flex;
-            flex-direction: column;
+            
+            display: none;
 
             li {
                 &:nth-of-type(3n+4){
@@ -60,6 +60,16 @@ $text-size: 16px;
             }
             
         }
+
+        &--isActived{
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
     }
+
+
     
 }

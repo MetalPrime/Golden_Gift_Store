@@ -13,6 +13,8 @@
     }
 
     &__btn{
+        border: 0px;
+        border-color: transparent;
         right: 0;
         padding: 25px;
         position: absolute;
@@ -28,7 +30,6 @@
           margin-bottom: 4px;
           right: 0;
           opacity: 1;
-          cursor: pointer;  
           transform: rotate(0deg);
         }
 
