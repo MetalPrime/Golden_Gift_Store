@@ -758,6 +758,42 @@ main {
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .experiences {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experiences__items {
+    height: 30%;
+    width: 100%;
+  }
+  .experiences__title {
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    font-size: 27px;
+  }
+  .experiences__text {
+    padding-left: 24px;
+    font-size: 20px;
+    padding-bottom: 24px;
+  }
+  .experiences__inputs {
+    position: relative;
+    padding-left: 24px;
+  }
+  .experiences__interaction {
+    height: 70%;
+    width: 100%;
+  }
+  .experiences__interaction img:nth-child(-n+3) {
+    left: 0;
+  }
+}
+
 .values {
   height: 60vh;
   width: auto;
