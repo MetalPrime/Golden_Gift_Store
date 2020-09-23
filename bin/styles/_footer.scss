@@ -92,3 +92,25 @@ footer{
         
     }
 }
+
+@media screen and(max-width: 600px) {
+    .footer{
+        &__section{
+            flex-direction: column;
+            padding-left: 3.188rem;
+            padding-right: 3.188rem;
+            padding-top: 1.594rem;
+
+            p{
+                display: flex;
+            }
+        }  
+        
+        &__items{
+            width: 100%;
+        }
+
+
+    }
+
+}

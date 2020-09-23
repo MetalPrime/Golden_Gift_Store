@@ -947,6 +947,26 @@ footer {
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .footer__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 3.188rem;
+    padding-right: 3.188rem;
+    padding-top: 1.594rem;
+  }
+  .footer__section p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__items {
+    width: 100%;
+  }
+}
+
 .buttom {
   width: 12.5rem;
   font-family: "Poppins", sans-serif;
