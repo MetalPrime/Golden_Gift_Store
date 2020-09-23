@@ -40,7 +40,16 @@ $text-size: 16px;
                     padding: 1rem;
                 }
             }
+
+            &:last-of-type{
+                img{
+                    width: auto;
+                    height: 50%;
+                }
+            }
         }
+
+
     
     }
 

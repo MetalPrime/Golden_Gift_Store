@@ -18,7 +18,7 @@ $text-size: 16px;
     }
 
     &__section{
-        background-color:blue;
+
         width: 100%;
         height: 42%;
         display: flex;
@@ -28,12 +28,37 @@ $text-size: 16px;
     }
 
     &__item{
-        background-color: blueviolet;
         width: 33%;
         height: 100%;
         margin-right: 51px;
         position: relative;
         align-self: flex-end;
+        background-position: center;
+        background-size: cover;
+
+        &--number1{
+background-image: url('./../../data/img/product1.jpeg');            
+        }
+
+        &--number2{
+background-image: url('./../../data/img/product2.jpeg');
+        }
+
+        &--number3{
+background-image: url('./../../data/img/product3.jpeg');
+        }
+
+        &--number4{
+background-image: url('./../../data/img/product4.jpeg');
+        }
+
+        &--number5{
+background-image: url('./../../data/img/product5.jpeg');
+        }
+
+        &--number6{
+background-image: url('./../../data/img/product6.jpeg');
+        }
     }
 
     &__options{
@@ -41,7 +66,7 @@ $text-size: 16px;
         bottom: 0%;
         width: 100%;
         height: 15%;
-        background-color: brown;
+        background-color: beige;
         display: flex;
         flex-direction: row;
         object-fit: contain;

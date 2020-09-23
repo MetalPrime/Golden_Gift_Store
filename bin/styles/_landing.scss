@@ -31,6 +31,21 @@ $text-size: 16px;
         width: 47.5%;
         text-align: center;
         color: seashell;
+
+        h2{
+            font-size: 35px;
+            padding-top: 6.375rem;
+            padding-left: 6.375rem;
+            padding-right: 6.375rem;
+        }
+
+        p{
+            font-size: 20px;
+            padding-top: 3.188rem;
+            padding-left: 6.375rem;
+            padding-right: 6.375rem;
+            padding-bottom: 6.375rem;
+        }
     }
 
     &__img{

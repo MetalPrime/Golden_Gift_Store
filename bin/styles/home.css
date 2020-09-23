@@ -313,6 +313,11 @@ main {
   padding: 1rem;
 }
 
+.navbar ul li:last-of-type img {
+  width: auto;
+  height: 50%;
+}
+
 @media screen and (max-width: 600px) {
   .navbar ul {
     display: none;
@@ -340,12 +345,18 @@ main {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .burgermenu__logo {
   display: none;
+  width: 35%;
+  padding: 1.594rem;
 }
 
 .burgermenu__btn {
@@ -455,6 +466,21 @@ main {
   width: 47.5%;
   text-align: center;
   color: seashell;
+}
+
+.landing__content h2 {
+  font-size: 35px;
+  padding-top: 6.375rem;
+  padding-left: 6.375rem;
+  padding-right: 6.375rem;
+}
+
+.landing__content p {
+  font-size: 20px;
+  padding-top: 3.188rem;
+  padding-left: 6.375rem;
+  padding-right: 6.375rem;
+  padding-bottom: 6.375rem;
 }
 
 .landing__img {
@@ -570,7 +596,6 @@ main {
 }
 
 .products__section {
-  background-color: blue;
   width: 100%;
   height: 42%;
   display: -webkit-box;
@@ -587,13 +612,38 @@ main {
 }
 
 .products__item {
-  background-color: blueviolet;
   width: 33%;
   height: 100%;
   margin-right: 51px;
   position: relative;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  background-position: center;
+  background-size: cover;
+}
+
+.products__item--number1 {
+  background-image: url("./../../data/img/product1.jpeg");
+}
+
+.products__item--number2 {
+  background-image: url("./../../data/img/product2.jpeg");
+}
+
+.products__item--number3 {
+  background-image: url("./../../data/img/product3.jpeg");
+}
+
+.products__item--number4 {
+  background-image: url("./../../data/img/product4.jpeg");
+}
+
+.products__item--number5 {
+  background-image: url("./../../data/img/product5.jpeg");
+}
+
+.products__item--number6 {
+  background-image: url("./../../data/img/product6.jpeg");
 }
 
 .products__options {
@@ -601,7 +651,7 @@ main {
   bottom: 0%;
   width: 100%;
   height: 15%;
-  background-color: brown;
+  background-color: beige;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,6 +1003,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 3.188rem;
     padding-right: 3.188rem;
     padding-top: 1.594rem;

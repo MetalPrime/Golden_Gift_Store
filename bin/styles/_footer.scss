@@ -97,6 +97,8 @@ footer{
     .footer{
         &__section{
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding-left: 3.188rem;
             padding-right: 3.188rem;
             padding-top: 1.594rem;
