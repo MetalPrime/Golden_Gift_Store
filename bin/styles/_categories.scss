@@ -4,6 +4,8 @@ $principal-font : 'Poppins', sans-serif;
 $text-size: 16px;
 
 .categories{
+    background-color: beige; 
+
     
     &__title{
         background-color: beige; 
@@ -81,4 +83,65 @@ $text-size: 16px;
 
 
     
+}
+
+
+@media screen and(max-width: 600px) {
+    .categories{
+        height: 120vh;
+        &__title{
+            height: 5%;
+            font-size: 27px;
+        }
+
+        &__container{
+            padding: 26px 51px;
+            height: 95%;
+
+        }
+
+        &__div{
+            flex-direction: column-reverse ;
+            width: 100%;
+            height: 50%;
+            flex-wrap: nowrap;
+
+            &--first{
+                display: flex;
+                flex-direction: unset;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__element{
+            &--bandeja{
+                width: 100%;
+                height: auto;
+                margin-right: 15px;
+            }
+
+            &--ancheta{
+                width: 42.5%;
+                padding: 0;
+                height: auto;
+                margin-right: 7.5px;
+
+            }
+
+            &--desayuno{
+
+                width: 42.5%;
+                padding: 0;
+                height: auto;
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            &--merienda{
+                width: auto;
+                height: 100%;
+                padding: 0;
+            }
+        }
+    }
 }

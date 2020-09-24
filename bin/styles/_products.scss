@@ -75,14 +75,14 @@ background-image: url('./../../data/img/product6.jpeg');
         padding: 7px;
 
         img{
-            width: auto;
+           width: auto;
             height: 100%;
         }
     }
 
     &__rating{
         height:  -webkit-fill-available;
-        width: auto;
+        width: -webkit-fill-available;
     }
 }
 
@@ -91,7 +91,7 @@ background-image: url('./../../data/img/product6.jpeg');
         padding: 26px 51px;
 
         &__title{
-
+            font-size: 27px;
         }
         &__section{
             display: flex;
@@ -110,7 +110,7 @@ background-image: url('./../../data/img/product6.jpeg');
         }
 
         &__ratiing{
-            width: auto;
+            width: 100%;
         }
     }
 }
