@@ -52,9 +52,7 @@ const values_stripe = document.querySelector('.values__stripe');
 const values_items = document.querySelectorAll('.values__items');
 
 
-if(window.matchMedia("(max-width: 600px)").matches){
-  values_stripe.addEventListener('click',handleSlider );
-}
+
 
 function handleSliderValues() {
   current++;
@@ -65,7 +63,10 @@ function handleSliderValues() {
   values_stripe.style.transform = 'translate(0px, -' + (height * current) + 'px)';
 }
 
-setInterval(handleSliderValues,2000);
+if(window.matchMedia("(max-width: 600px)").matches){
+  values_stripe.addEventListener('click',handleSliderValues);
+  setInterval(handleSliderValues,2000);
+}
 
 
 
@@ -76,6 +77,10 @@ values_stripe.addEventListener('click', function() {
   values_items.style.transform = '0px,translate(-' + (heiight * value) + 'px )';
   console.log(value)
 });*/
+
+
+///////////////////////////////////////////////
+//Creation of the star rating in the product
 
 const starsContainer = document.querySelectorAll('.products__rating');
 

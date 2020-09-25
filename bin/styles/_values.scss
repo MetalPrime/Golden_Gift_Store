@@ -31,7 +31,6 @@ $text-size: 16px;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        transition: transform .35s ease-in-out;
         
     }
 
@@ -70,6 +69,8 @@ $text-size: 16px;
         &__stripe{
             display: block;
             width: 100%;
+            transition: transform .35s ease-in-out;
+
         }
 
         &__items{
