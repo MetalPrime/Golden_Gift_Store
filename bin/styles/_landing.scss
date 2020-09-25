@@ -56,3 +56,44 @@ $text-size: 16px;
         }
     }
 }
+
+@media screen and(max-width: 600px){
+
+    .landing{
+        height: 80%;
+        object-fit: contain;
+        padding:   1.594rem 3.188rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+
+        &__contact{
+            display: none;
+        }
+
+        &__content{
+            width: 100%;
+            h2{
+                font-size: 27px;
+                padding: 10px;
+            }
+    
+            p{
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+        &__img{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+            img{
+
+            }
+        }
+
+
+    }
+}

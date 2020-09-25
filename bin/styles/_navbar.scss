@@ -57,10 +57,12 @@ $text-size: 16px;
 
 @media screen and(max-width: 600px) {
     .navbar{
+        display: none;
 
         ul{
             
             display: none;
+
 
             li {
                 &:nth-of-type(3n+4){
@@ -71,6 +73,7 @@ $text-size: 16px;
         }
 
         &--isActived{
+            display: grid;
             ul{
                 display: flex;
                 flex-direction: column;
