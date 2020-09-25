@@ -974,6 +974,11 @@ main {
   text-align: center;
 }
 
+.values__father {
+  height: 70%;
+  overflow: hidden;
+}
+
 .values__stripe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,7 +993,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .35s ease-in-out;
+  transition: -webkit-transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
 }
 
 .values__items {
@@ -1012,6 +1021,7 @@ main {
   .values {
     padding-right: 51px;
     padding-left: 51px;
+    overflow: hidden;
   }
   .values__title {
     font-size: 27px;
@@ -1019,7 +1029,6 @@ main {
   .values__stripe {
     display: block;
     width: 100%;
-    overflow: hidden;
   }
   .values__items {
     display: -webkit-box;

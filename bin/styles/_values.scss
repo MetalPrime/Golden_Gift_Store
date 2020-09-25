@@ -20,12 +20,18 @@ $text-size: 16px;
         text-align: center;
     }
 
+    &__father{
+        height: 70%;
+        overflow: hidden;
+    }
+
     &__stripe {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 70%;
+        height: 100%;
+        transition: transform .35s ease-in-out;
         
     }
 
@@ -55,6 +61,7 @@ $text-size: 16px;
 
         padding-right: 51px;
         padding-left: 51px;
+        overflow: hidden;
 
         &__title{
             font-size: 27px;
@@ -63,7 +70,6 @@ $text-size: 16px;
         &__stripe{
             display: block;
             width: 100%;
-            overflow: hidden;
         }
 
         &__items{

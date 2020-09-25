@@ -53,17 +53,19 @@ const values_items = document.querySelectorAll('.values__items');
 
 
 if(window.matchMedia("(max-width: 600px)").matches){
-  values_stripe.addEventListener('click', function () {
-    current++;
-    if(current >= values_stripe.children.length) {
-      current = 0;
-      values_items[current].style.transform = 'translate(0px, -' + (height * current) + 'px)';
-    }
-    const height = values_stripe.clientHeight;
-    values_items[current-1].style.transform = 'translate(0px, -' + (height * current-1) + 'px)';
-    values_items[current].style.transform = 'translate(0px, -' + (height * current) + 'px)';
-  });
+  values_stripe.addEventListener('click',handleSlider );
 }
+
+function handleSliderValues() {
+  current++;
+  if(current >= values_items.length) {
+    current = 0;
+  }
+  const height = values_stripe.clientHeight;
+  values_stripe.style.transform = 'translate(0px, -' + (height * current) + 'px)';
+}
+
+setInterval(handleSliderValues,2000);
 
 
 
@@ -78,9 +80,9 @@ values_stripe.addEventListener('click', function() {
 const starsContainer = document.querySelectorAll('.products__rating');
 
 starsContainer.forEach(function(element,i){
-  
-});
-  const ratingStars = document.querySelectorAll('.products__star');
+
+
+  const ratingStars = element.querySelectorAll('.products__star');
 
   ratingStars.forEach(function (elem, index) {
 
@@ -97,12 +99,15 @@ starsContainer.forEach(function(element,i){
   
       for(let i = 0; i < ratingStars.length; i++) {
         if(i <= index) {
-          ratingStars[i].classList.add('product__star--filled');
+          ratingStars[i].classList.add('products__star--filled');
         } else {
-          ratingStars[i].classList.remove('product__star--filled');
+          ratingStars[i].classList.remove('products__star--filled');
         }
       }
   
     });
   });
 
+
+});
+ 
