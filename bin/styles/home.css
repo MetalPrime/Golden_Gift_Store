@@ -795,6 +795,15 @@ main {
   width: -webkit-fill-available;
 }
 
+.products__star {
+  width: 20%;
+  opacity: .4;
+}
+
+.products__star--filled {
+  opacity: 1;
+}
+
 @media screen and (max-width: 600px) {
   .products {
     padding: 26px 51px;

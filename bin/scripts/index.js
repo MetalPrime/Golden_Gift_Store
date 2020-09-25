@@ -74,3 +74,35 @@ values_stripe.addEventListener('click', function() {
   values_items.style.transform = '0px,translate(-' + (heiight * value) + 'px )';
   console.log(value)
 });*/
+
+const starsContainer = document.querySelectorAll('.products__rating');
+
+starsContainer.forEach(function(element,i){
+  
+});
+  const ratingStars = document.querySelectorAll('.products__star');
+
+  ratingStars.forEach(function (elem, index) {
+
+    elem.addEventListener('click', function() {
+      console.log(i);
+  
+      /* ratingStars.forEach(function (star, i) {
+        if(i <= index) {
+          star.classList.add('rating__star--filled');
+        } else {
+          star.classList.remove('rating__star--filled');
+        }
+      }); */
+  
+      for(let i = 0; i < ratingStars.length; i++) {
+        if(i <= index) {
+          ratingStars[i].classList.add('product__star--filled');
+        } else {
+          ratingStars[i].classList.remove('product__star--filled');
+        }
+      }
+  
+    });
+  });
+

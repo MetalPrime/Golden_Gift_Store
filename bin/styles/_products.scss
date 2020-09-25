@@ -84,6 +84,15 @@ background-image: url('./../../data/img/product6.jpeg');
         height:  -webkit-fill-available;
         width: -webkit-fill-available;
     }
+
+    &__star {
+        width: 20%;
+        opacity: .4;
+    
+        &--filled {
+          opacity: 1;
+        }
+      }
 }
 
 @media screen and(max-width: 600px) {
