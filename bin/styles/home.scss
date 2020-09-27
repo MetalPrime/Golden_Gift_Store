@@ -1,5 +1,5 @@
 @import '_reset';
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 header{
     width: auto;
@@ -24,6 +24,7 @@ main{
 @import '_experiences.scss';
 @import '_values.scss';
 @import '_clients.scss';
+@import '_prices.scss';
 @import '_footer.scss';
 @import '_buttom.scss';
 @import '_input.scss';

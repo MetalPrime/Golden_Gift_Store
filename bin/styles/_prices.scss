@@ -1,0 +1,55 @@
+$principal-font : 'Poppins', sans-serif;
+
+
+.prices{
+    height: 75vh;
+    width: 100%;
+    padding-right: 102px;
+    padding-left: 102px;
+    padding-bottom: 51px;
+    background-color: beige;
+
+    &__title{
+        height: 15%;
+        font-size: 35px;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+
+        table {
+            height: 100%;
+            width: 100%;
+            border: 1px solid #000;
+            font-family: $principal-font;
+            text-align: center; 
+        }
+         th {
+             height: 10%;       
+            border: 1px solid #000;
+            vertical-align: middle;
+
+         }
+         td {
+            width: 25%;
+            height: 22%;
+            border: 1px solid #000;
+            text-align: center;
+            vertical-align: middle;
+
+            &:last-of-type{
+                width: 75%;
+            }
+         }
+
+            
+         
+    }
+}
