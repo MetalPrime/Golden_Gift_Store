@@ -27,6 +27,7 @@ btn_nav.addEventListener('click',()=>{
 
 let currentProductsNew = 0;
 const products__section__new = document.querySelector('.products__section--new');
+const products__carrousel__new = products__section__new.querySelector('.products__carrousel');
 const products__item__new = products__section__new.querySelectorAll('.products__item');
 
 console.log(products__item__new);
@@ -37,13 +38,13 @@ function handleSliderProductsNew() {
 
     currentProductsNew = 0;
   }
-  const widthNew = products__item__new[0].clientWidth;
-  products__section__new.style.transform = 'translate(-' + (widthNew * currentProductsNew) + 'px,0px)';
+  const widthNew = products__carrousel__new.clientWidth;
+  products__carrousel__new.style.transform = 'translate(-' + (widthNew * currentProductsNew) + 'px,0px)';
 }
 
 if(window.matchMedia("(max-width: 600px)").matches){
   //values_stripe.addEventListener('click',handleSliderValues);
-  //setInterval(handleSliderProductsNew,3000);
+  setInterval(handleSliderProductsNew,3000);
 }
 
 let currentProductsFavorite = 0;
