@@ -821,7 +821,6 @@ main {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    overflow: hidden;
   }
   .products__item {
     display: block;

@@ -18,7 +18,6 @@ $text-size: 16px;
     }
 
     &__section{
-
         width: 100%;
         height: 42%;
         display: flex;
@@ -106,7 +105,6 @@ background-image: url('./../../data/img/product6.jpeg');
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            overflow: hidden;
         }
         &__item{
             display: block;

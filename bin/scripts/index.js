@@ -1,3 +1,5 @@
+///////////////burger menu interaction
+
 const btn_nav = document.querySelector('.burgermenu__btn');
 const navbar = document.querySelector('.navbar');
 console.log(btn_nav);
@@ -19,11 +21,57 @@ btn_nav.addEventListener('click',()=>{
   }
   
   
-})
+});
+
+///////////////////////////// products carrousel
+
+let currentProductsNew = 0;
+const products__section__new = document.querySelector('.products__section--new');
+const products__item__new = products__section__new.querySelectorAll('.products__item');
+
+console.log(products__item__new);
+
+function handleSliderProductsNew() {
+  currentProductsNew++;
+  if(currentProductsNew >= products__item__new.length) {
+
+    currentProductsNew = 0;
+  }
+  const widthNew = products__item__new[0].clientWidth;
+  products__section__new.style.transform = 'translate(-' + (widthNew * currentProductsNew) + 'px,0px)';
+}
+
+if(window.matchMedia("(max-width: 600px)").matches){
+  //values_stripe.addEventListener('click',handleSliderValues);
+  //setInterval(handleSliderProductsNew,3000);
+}
+
+let currentProductsFavorite = 0;
+const products__section__favorite = document.querySelector(' .products__section--favorite');
+  //const products__item__favorite = elementProduct.querySelectorAll('.products__item');
+
+/*
+  function handleSliderProducts() {
+    currentProducts++;
+    console.log(products__item.length)
+    if(currentProducts >= products__item.length) {
+  
+      currentProducts = 0;
+    }
+    const width = products__section[indexProduct].clientWidth;
+    products__section[indexProduct].style.transform = 'translate(-' + (width * currentProducts) + 'px,0px)';
+  }
+
+  if(window.matchMedia("(max-width: 600px)").matches){
+    //values_stripe.addEventListener('click',handleSliderValues);
+    setInterval(handleSliderProducts,3000);
+  }
+*/
 
 
 
-////////////////////////////////////
+
+//////////////////////////////////// experiences interaction
 
 const slider = document.querySelectorAll('.experiences__slider');
 const img = document.querySelectorAll('.experiences__interaction img');
@@ -44,8 +92,7 @@ slider.forEach((element,index) => {
     });
 });
 
-//////////////////////////////////
-
+//////////////////////////////////values carrousel interaction
 
 let current = 0;
 const values_stripe = document.querySelector('.values__stripe');
@@ -83,7 +130,6 @@ values_stripe.addEventListener('click', function() {
 //Creation of the star rating in the product
 
 const starsContainer = document.querySelectorAll('.products__rating');
-
 starsContainer.forEach(function(element,i){
 
 
