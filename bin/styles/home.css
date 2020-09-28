@@ -731,6 +731,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 .products__item {
@@ -742,6 +744,7 @@ main {
       align-self: flex-end;
   background-position: center;
   background-size: cover;
+  font-family: "Poppins", sans-serif;
 }
 
 .products__item--number1 {
