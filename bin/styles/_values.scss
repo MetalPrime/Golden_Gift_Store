@@ -6,12 +6,14 @@ $text-size: 16px;
 
 .values{
 
-    height: 60vh;
+    height: 70vh;
     width: auto;
     padding-right: 102px;
     padding-left: 102px;
     background-color: beige; 
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title{
         height: 15%;
@@ -25,6 +27,7 @@ $text-size: 16px;
     &__father{
         height: 70%;
         overflow: hidden;
+        width: 100%;
     }
 
     &__stripe {
@@ -55,6 +58,15 @@ $text-size: 16px;
         }
     }
 
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 51px;
+        margin-bottom: 51px;
+    }
+
+    
 }
 
 @media screen and(max-width: 600px) {
