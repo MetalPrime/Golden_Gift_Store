@@ -42,12 +42,15 @@ $text-size: 16px;
     &__items{
         height: 100%;
         position: relative;
+        border-radius: 5px;
 
         &--entrega{
             img{
                 padding-top: 20%;
             }
         }
+
+        
 
          p{
             font-family: $principal-font;

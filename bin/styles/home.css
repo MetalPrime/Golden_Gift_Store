@@ -446,28 +446,21 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: auto;
 }
 
 .landing__contact {
+  display: none;
   width: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
+  height: auto;
 }
 
-.landing__contact ul {
-  height: 100%;
-}
-
-.landing__contact hr {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  border: 10px;
-  border-color: white;
+.landing__contact ul:first-child {
+  width: 50%;
 }
 
 .landing__content {
@@ -1042,6 +1035,7 @@ main {
 .values__items {
   height: 100%;
   position: relative;
+  border-radius: 5px;
 }
 
 .values__items--entrega img {
@@ -1159,16 +1153,18 @@ main {
   margin-bottom: 51px;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 10px;
 }
 
 .clients__items h2 {
   width: auto;
   text-align: center;
   height: 20%;
-  font-size: 27px;
+  font-size: 23px;
   padding-top: 13px;
   padding-left: 51px;
   padding-right: 51px;
+  font-family: "Lily Script One", cursive;
 }
 
 .clients__items div {
@@ -1202,6 +1198,7 @@ main {
 
 .clients__items div p {
   font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 600px) {
