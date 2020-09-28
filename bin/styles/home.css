@@ -11,10 +11,7 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -480,6 +477,7 @@ main {
 }
 
 .landing__content h2 {
+  font-family: "Lily Script One", cursive;
   font-size: 35px;
   padding-top: 6.375rem;
   padding-left: 6.375rem;
@@ -553,6 +551,7 @@ main {
   background-color: beige;
   width: 100%;
   height: 10vh;
+  font-family: "Lily Script One", cursive;
   font-size: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -702,6 +701,7 @@ main {
 }
 
 .products__title {
+  font-family: "Lily Script One", cursive;
   font-size: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -847,6 +847,10 @@ main {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-transition: -webkit-transform .35s ease-in-out;
+    transition: -webkit-transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
   }
   .products__item {
     display: block;
@@ -894,6 +898,7 @@ main {
   padding-left: 102px;
   padding-right: 51px;
   padding-bottom: 51px;
+  font-family: "Lily Script One", cursive;
   font-size: 35px;
 }
 
@@ -992,6 +997,7 @@ main {
 
 .values__title {
   height: 15%;
+  font-family: "Lily Script One", cursive;
   font-size: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1094,6 +1100,7 @@ main {
 
 .clients__title {
   height: 15%;
+  font-family: "Lily Script One", cursive;
   font-size: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1216,6 +1223,7 @@ main {
 }
 
 .prices__title {
+  font-family: "Lily Script One", cursive;
   height: 15%;
   font-size: 35px;
   -webkit-box-align: center;
@@ -1245,21 +1253,21 @@ main {
 .prices__content table {
   height: 100%;
   width: 100%;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 .prices__content th {
   height: 10%;
-  border: 1px solid #000;
+  border: 2px solid #000;
   vertical-align: middle;
 }
 
 .prices__content td {
   width: 25%;
   height: 22%;
-  border: 1px solid #000;
+  border: 2px solid #000;
   text-align: center;
   vertical-align: middle;
 }

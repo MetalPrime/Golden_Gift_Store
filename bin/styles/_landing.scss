@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 $principal-font : 'Poppins', sans-serif;
+$secundary-font : 'Lily Script One', cursive;
 $text-size: 16px;
 
 .landing {
@@ -33,6 +32,7 @@ $text-size: 16px;
         color: seashell;
 
         h2{
+            font-family: $secundary-font;
             font-size: 35px;
             padding-top: 6.375rem;
             padding-left: 6.375rem;

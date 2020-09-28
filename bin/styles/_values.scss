@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 $principal-font : 'Poppins', sans-serif;
+$secundary-font : 'Lily Script One', cursive;
 $text-size: 16px;
 
 .values{
@@ -14,6 +15,7 @@ $text-size: 16px;
 
     &__title{
         height: 15%;
+        font-family: $secundary-font;
         font-size: 35px;
         align-items: center;
         padding: 10px;

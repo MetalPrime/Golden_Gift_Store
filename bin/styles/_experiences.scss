@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 
 $principal-font : 'Poppins', sans-serif;
+$secundary-font : 'Lily Script One', cursive;
 $text-size: 16px;
 
 .experiences{
@@ -24,7 +25,7 @@ $text-size: 16px;
         padding-left: 102px;
         padding-right: 51px;
         padding-bottom: 51px;
-        
+        font-family: $secundary-font;
         font-size: 35px;
     }
 

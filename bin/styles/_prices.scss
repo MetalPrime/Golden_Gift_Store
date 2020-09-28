@@ -1,5 +1,5 @@
 $principal-font : 'Poppins', sans-serif;
-
+$secundary-font : 'Lily Script One', cursive;
 
 .prices{
     height: 75vh;
@@ -10,6 +10,7 @@ $principal-font : 'Poppins', sans-serif;
     background-color: beige;
 
     &__title{
+        font-family: $secundary-font;
         height: 15%;
         font-size: 35px;
         align-items: center;
@@ -27,20 +28,20 @@ $principal-font : 'Poppins', sans-serif;
         table {
             height: 100%;
             width: 100%;
-            border: 1px solid #000;
+            border: 2px solid #000;
             font-family: $principal-font;
             text-align: center; 
         }
          th {
              height: 10%;       
-            border: 1px solid #000;
+            border: 2px solid #000;
             vertical-align: middle;
 
          }
          td {
             width: 25%;
             height: 22%;
-            border: 1px solid #000;
+            border: 2px solid #000;
             text-align: center;
             vertical-align: middle;
 

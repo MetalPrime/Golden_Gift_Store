@@ -1,4 +1,5 @@
 $principal-font : 'Poppins', sans-serif;
+$secundary-font : 'Lily Script One', cursive;
 
 
 .clients{
@@ -10,6 +11,7 @@ $principal-font : 'Poppins', sans-serif;
 
     &__title{
         height: 15%;
+        font-family: $secundary-font;
         font-size: 35px;
         align-items: center;
         padding: 10px;
