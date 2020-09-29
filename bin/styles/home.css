@@ -16,7 +16,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -586,7 +585,7 @@ main {
 }
 
 .categories__element {
-  padding: 15px;
+  position: relative;
   background-size: cover;
   background-position: center;
 }
@@ -626,6 +625,25 @@ main {
   height: auto;
   width: 100%;
   margin: 15px;
+}
+
+.categories__description {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(222, 184, 135, 0.5);
+  overflow: hidden;
+}
+
+.categories__btnDescription {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {
@@ -731,8 +749,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-shadow: 10px 5px 5px black;
-          box-shadow: 10px 5px 5px black;
 }
 
 .products__item {
@@ -921,6 +937,7 @@ main {
 }
 
 .experiences__interaction {
+  overflow: hidden;
   width: 65%;
   height: 100%;
   background-image: url(./../../data/img/back-experiences.jpg);

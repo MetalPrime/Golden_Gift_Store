@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 $principal-font : 'Poppins', sans-serif;
 $secundary-font : 'Lily Script One', cursive;
@@ -42,7 +41,7 @@ $text-size: 16px;
     }
 
     &__element{
-        padding: 15px;
+        position: relative;
         background-size: cover;
         background-position: center;
         
@@ -77,11 +76,30 @@ $text-size: 16px;
             width: 100%;
             margin: 15px;
         }
+
+
     }
     
 
+    &__description{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(222, 184, 135, 0.5);
+        overflow: hidden;
+    }
 
-
+    &__btnDescription{
+        position: absolute;
+        //muevase con respecto a su padre
+        left: 50%;
+        //muevase la mitad de lo que usted mide a la izquierda con respecto a usted mismo
+        transform: translate(-50%,-50%);
+        border: none;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
 
 
     
