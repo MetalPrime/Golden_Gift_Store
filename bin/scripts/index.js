@@ -163,3 +163,20 @@ starsContainer.forEach(function(element,i){
 
 });
  
+////btn interaction categories
+
+const categories__element = document.querySelectorAll('.categories__element');
+
+categories__element.forEach(function(elem,i){
+  console.log("dsvfddsf");
+  const categories__btnDescription = elem.querySelector('.categories__btnDescription');
+  const categories__description = elem.querySelector('.categories__description');
+
+  categories__btnDescription.addEventListener('click',function(){
+    if(categories__description.classList.contains('categories__description--active')){
+      categories__description.classList.remove('categories__description--active');
+    } else {
+      categories__description.classList.add('categories__description--active');
+    }
+  });
+});

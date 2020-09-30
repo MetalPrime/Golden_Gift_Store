@@ -41,6 +41,7 @@ $text-size: 16px;
     }
 
     &__element{
+        width: 100%;
         position: relative;
         background-size: cover;
         background-position: center;
@@ -77,6 +78,8 @@ $text-size: 16px;
             margin: 15px;
         }
 
+        transition: transform .35s ease-in-out;
+
 
     }
     
@@ -84,8 +87,39 @@ $text-size: 16px;
     &__description{
         width: 50%;
         height: 100%;
-        background-color: rgba(222, 184, 135, 0.5);
+        background-color: rgba(222, 184, 135, 0.7);
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+        transition: transform .35s ease-in-out;
+
+        h2{
+            font-size: 24px;
+            font-family: $secundary-font;
+            text-align: center;
+        }
+
+        p{
+            display: none;
+        }
+        button{
+            display: none;
+        }
+
+        &--active{
+            transition: transform .35s ease-in-out;
+            width: 100%;
+            p{
+                display: block;
+            }
+            button{
+                display: block;
+            }
+        
+        }
     }
 
     &__btnDescription{
@@ -99,6 +133,7 @@ $text-size: 16px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
+        font-size: 24px;
     }
 
 
