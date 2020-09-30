@@ -42,6 +42,7 @@ $text-size: 16px;
 
     &__element{
         width: 100%;
+        height: auto;
         position: relative;
         background-size: cover;
         background-position: center;
@@ -110,8 +111,9 @@ $text-size: 16px;
         }
 
         &--active{
-            transition: transform .35s ease-in-out;
-            width: 100%;
+
+            width: auto;
+
             p{
                 display: block;
             }

@@ -586,6 +586,7 @@ main {
 
 .categories__element {
   width: 100%;
+  height: auto;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -671,11 +672,7 @@ main {
 }
 
 .categories__description--active {
-  -webkit-transition: -webkit-transform .35s ease-in-out;
-  transition: -webkit-transform .35s ease-in-out;
-  transition: transform .35s ease-in-out;
-  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
-  width: 100%;
+  width: auto;
 }
 
 .categories__description--active p {
