@@ -1,0 +1,84 @@
+$principal-font : 'Poppins', sans-serif;
+$text-size: 16px;
+
+.form {
+  font-family: $principal-font;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: whitesmoke;
+
+    &__article {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+  
+    &__title {
+      margin-top: 0;
+    }
+
+    &__section {
+      width: 33%;
+    }
+  
+    &__label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-right: 20px;
+
+      &--description{
+        height: 87%;
+      }
+
+      &--thirdColumn{
+        margin-right: 0%;
+
+        input{
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+
+        section{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+    
+          img{
+            width: 30%;
+          }
+
+          
+      }
+      }
+
+      
+      }
+
+    &__btn{
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 10px;
+
+      button{
+        margin-left: 20px;
+      }
+    }
+
+
+    textarea{
+      resize: none;
+      height: 80%;
+    }
+
+    h2{
+      padding-bottom: 14px;
+    }
+
+
+
+}
