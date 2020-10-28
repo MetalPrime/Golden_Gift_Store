@@ -23,6 +23,9 @@ btn_nav.addEventListener('click',()=>{
   
 });
 
+let arrayRandom = ["nombre","edad","fecha"];
+console.log(arrayRandom);
+
 ///////////////////////////// products carrousel
 
 let currentProductsNew = 0;

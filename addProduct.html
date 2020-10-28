@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bin/styles/addProduct.css">
+</head>
+<body class="padding">
+
+    <form class="form  padding__section">
+      <h2 class="form__title">Nuevo producto</h2>
+
+      <article class="form__article">
+        <section class="form__section">
+          <label class="form__label">
+            Nombre del producto
+            <input name="title" type="text">
+          </label>
+      
+          <label class="form__label form__label--description">
+            Descripción del producto
+            <textarea name="description"></textarea>
+          </label>
+        </section>
+        <section class="form__section">
+          <label class="form__label">
+            Precio del producto
+            <input name="price" type="number">
+          </label>
+    
+          <label class="form__label">
+            Categoria del producto
+            <select name="categories">
+              <option value="breakfast">Desayuno</option>
+              <option value="snack">Merienda</option>
+              <option value="basket">Ancheta</option>
+              <option value="tray">Bandeja</option>
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Tamaño del producto
+            <select name="size">
+              <option value="little">Pequeña</option>
+              <option value="middle">Mediana</option>
+              <option value="big">Grande</option>
+
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Número de items
+            <select name="numberItems">
+              <option value="une">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+              <option value="seven">7</option>
+              <option value="eight">8</option>
+              <option value="nine">9</option>
+              <option value="ten">10</option>
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Status del producto
+            <input name="status" type="number">
+          </label>
+    
+          <label class="form__label">
+            Enfoque del producto
+            <input name="price" type="number">
+          </label>
+    
+        </section>
+        <section class="form__section">
+          <label class="form__label--thirdColumn">
+            Imágenes
+            <img src="data/img/imgBase.png" alt="imgBase">
+            <input type="file" name="images" >
+
+            <section>
+              <img src="data/img/imgBase.png" alt="imgBase">
+              <img src="data/img/imgBase.png" alt="imgBase">
+              <img src="data/img/imgBase.png" alt="imgBase">
+            </section>
+          </label>
+        </section>
+      </article>
+
+      <section class="form__btn">
+        <button class="buttom">
+          Cancelar producto
+        </button>
+        <button class="buttom">
+          Agregar producto
+        </button>
+      </section>
+     
+    </form>
+  
+    <script src="./scripts/main.js"></script>
+</body>
+
+<!--Firebase-->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+<script src="bin/scripts/products.js"></script>
+
+</html>
