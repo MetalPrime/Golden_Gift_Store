@@ -315,6 +315,14 @@ main {
   height: 50%;
 }
 
+.navbar--store {
+  position: fixed;
+  background-color: rgba(31, 31, 31, 0.842);
+  top: 0%;
+  left: 0%;
+  height: 12%;
+}
+
 @media screen and (max-width: 600px) {
   .navbar {
     display: none;
