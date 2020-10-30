@@ -67,12 +67,23 @@
     
           <label class="form__label">
             Status del producto
-            <input name="status" type="number">
+            <select name="status">
+              <option value="new">Nuevos</option>
+              <option value="favorite">Favoritos</option>
+              <option value="discount">Descuento</option>
+            </select>
           </label>
     
           <label class="form__label">
             Enfoque del producto
-            <input name="price" type="number">
+            <select name="focus">
+              <option value="couple">Pareja</option>
+              <option value="familie">Familiar</option>
+              <option value="friend">Amigo</option>
+              <option value="partner">Compañero</option>
+              <option value="child">Hijo</option>
+              <option value="lover">Moza</option>
+            </select>
           </label>
     
         </section>
@@ -80,7 +91,7 @@
           <label class="form__label--thirdColumn">
             Imágenes
             <img src="data/img/imgBase.png" alt="imgBase">
-            <input type="file" name="images" >
+            <input type="file" name="image" >
 
             <section>
               <img src="data/img/imgBase.png" alt="imgBase">
@@ -102,12 +113,12 @@
      
     </form>
   
-    <script src="./scripts/main.js"></script>
 </body>
 
 <!--Firebase-->
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
-<script src="bin/scripts/products.js"></script>
+<script src="bin/scripts/firebase.js"></script>
+<script src="bin/scripts/addProduct.js"></script>
 
 </html>
