@@ -1,21 +1,25 @@
 const products = [
     {
       title: 'Celular Motorola Moto One Macro',
+      category : 'Nicotina',
       img: 'https://http2.mlstatic.com/D_NQ_NP_671655-MCO43438392203_092020-V.webp',
       price: 499900,
     },
     {
       title: 'Celular Motorola One Action Color Blanco',
+      category : 'Nicotina',
       img: 'https://http2.mlstatic.com/D_NQ_NP_760318-MCO42908273986_072020-V.webp',
       price: 679900,
     },
     {
       title: 'Celular Motorola Moto G8 Plus 64gb',
+      category : 'Nicotina',
       img: 'https://http2.mlstatic.com/D_NQ_NP_846737-MCO43497294331_092020-V.webp',
       price: 649900,
     },
     {
       title: 'Motorola Moto G8 Power 4g',
+      category : 'Nicotina',
       img: 'https://http2.mlstatic.com/D_NQ_NP_725226-MCO42143648422_062020-V.webp',
       price: 699900,
     },
@@ -34,6 +38,7 @@ const products = [
       newProduct.innerHTML = `
       <img class="product__img" src="${elem.img}" alt="">
       <div class="product__info">
+        <p class="product__price"> ${elem.category}</p>
         <h3 class="product__title">${elem.title}</h3>
         <p class="product__price">$ ${elem.price}</p>
       </div>
@@ -48,7 +53,7 @@ const products = [
   renderProducts(products);
   
   
-  const filterBtn = document.querySelector('.filterbtn');
+ /* const filterBtn = document.querySelector('.filterbtn');
   filterBtn.addEventListener('click', function () {
     // función slice para tomar una sección de la lista
     // const filtered = products.slice(1, 3);
@@ -64,4 +69,4 @@ const products = [
   
     // render solo con los productos filtrados
     renderProducts(filtered);
-  });
+  }); */
