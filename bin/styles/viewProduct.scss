@@ -1,0 +1,90 @@
+@import '_reset.scss';
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$principal-font : 'Poppins', sans-serif;
+
+body{
+    font-family: $principal-font ;
+    background-color: #EAF8FF;
+}
+
+.itemProduct{
+    background-color: cornsilk;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+
+    &__info{
+        width: 35%;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    
+        button{
+            width: 60%;
+            margin: 0 auto;
+            height: 7%;
+        }
+    }
+
+    &__category{
+        font-size: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    &__title{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        font-size: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    &__price{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+
+    &__rating{
+        justify-content: center;
+        display: flex;
+        margin-bottom: 15px;
+
+    }
+
+
+
+    &__img{
+        width: 50%;
+        height: 100%;
+        background-image: url("./../../data/img/MaskGroup.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    &__carrousel{
+        width: 15%;
+        height: 100%;
+        margin: 0 15px;
+
+        div{
+            height: 20%;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+
+        }
+    }
+}
+
+@import '_padding.scss';
+@import '_navbar.scss';
