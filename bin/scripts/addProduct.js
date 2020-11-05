@@ -1,6 +1,7 @@
 const db = firebase.firestore();
 const productsRef = db.collection('products');
-
+const storageRef = firebase.storage().ref();
+let imgPath;
 
 
 //Aqui es donde agregamos un producto
@@ -8,20 +9,10 @@ const form = document.querySelector('.form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
  
-  //var storageRef = firebase.storage().ref();
-
-  // Create a reference to 'mountains.jpg'
-  /*var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*123152194192)}.jpg`);
-
-  var file = form.imageFile.files[0]; // use the Blob or File API
-  newImageRef.put(file).then(function(snapshot) {
-    console.log(snapshot)
-    console.log('Uploaded a blob or file!');
-  });*/
 
   const newProduct = {
     title: form.title.value,
-    img: form.image.value,
+    img: imgPath,
     price: form.price.value,
     description : form.description.value,
     categorie : form.categories.value,
@@ -29,7 +20,7 @@ form.addEventListener('submit', function (event) {
     numberItems : form.numberItems.value,
     status: form.status.value,
     focus : form.focus.value,
-
+    id : productsRef.key,
   };
 
   //loader.classList.add('loader--show');
@@ -40,6 +31,7 @@ form.addEventListener('submit', function (event) {
     form.title.value = '';
     form.image.value = '';
     form.price.value = '';
+    
     selectedItem = null;
   }
 
@@ -70,3 +62,19 @@ form.addEventListener('submit', function (event) {
 });
 
 
+
+
+form.image.addEventListener('change', function () {
+  // Create a reference to 'mountains.jpg'
+  var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*123152194192)}.jpg`);
+  
+  console.log(imgPath)
+  var file = form.image.files[0]; // use the Blob or File API
+  newImageRef.put(file).then(function(snapshot) {
+    console.log(snapshot)
+    console.log('Uploaded a blob or file!');
+    imgPath = snapshot.metadata.fullPath;
+    console.log(imgPath)
+
+  });
+});

@@ -1,43 +1,31 @@
-const products = [
-    {
-      title: 'Celular Motorola Moto One Macro',
-      category : 'Nicotina',
-      img: 'https://http2.mlstatic.com/D_NQ_NP_671655-MCO43438392203_092020-V.webp',
-      price: 499900,
-    },
-    {
-      title: 'Celular Motorola One Action Color Blanco',
-      category : 'Nicotina',
-      img: 'https://http2.mlstatic.com/D_NQ_NP_760318-MCO42908273986_072020-V.webp',
-      price: 679900,
-    },
-    {
-      title: 'Celular Motorola Moto G8 Plus 64gb',
-      category : 'Nicotina',
-      img: 'https://http2.mlstatic.com/D_NQ_NP_846737-MCO43497294331_092020-V.webp',
-      price: 649900,
-    },
-    {
-      title: 'Motorola Moto G8 Power 4g',
-      category : 'Nicotina',
-      img: 'https://http2.mlstatic.com/D_NQ_NP_725226-MCO42143648422_062020-V.webp',
-      price: 699900,
-    },
-  ];
+
 
   const db = firebase.firestore();
   const productsRef = db.collection('products');
+  const storageRef = firebase.storage().ref();
+
   
   const productsList = document.querySelector('.productslist');
 // creación de nuevos productos a partir de la lista
 function renderProducts (list) {
   productsList.innerHTML = '';
   list.forEach(function (elem) {
-    const newProduct = document.createElement('article');
+    const newProduct = document.createElement('a');
     newProduct.classList.add('product');
 
+    const url = `viewProduct.html?${elem.id}-${elem.title}`;
+    newProduct.setAttribute('href',url);
+
+    storageRef.child(elem.img).getDownloadURL().then(function(url) {
+      // Or inserted into an <img> element:
+      var img = newProduct.querySelector('img');
+      img.src = url;
+    }).catch(function(error) {
+      // Handle any errors
+    });
+
     newProduct.innerHTML = `
-    <img class="product__img" src="${elem.img}" alt="">
+    <img class="product__img" src="" alt="imgProduct">
     <div class="product__info">
       <p class="product__price"> ${elem.categorie}</p>
       <h3 class="product__title">${elem.title}</h3>
