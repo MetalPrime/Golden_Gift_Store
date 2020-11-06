@@ -20,7 +20,7 @@ form.addEventListener('submit', function (event) {
     numberItems : form.numberItems.value,
     status: form.status.value,
     focus : form.focus.value,
-    id : productsRef.key,
+    id : productsRef.doc().id,
   };
 
   //loader.classList.add('loader--show');
@@ -31,6 +31,7 @@ form.addEventListener('submit', function (event) {
     form.title.value = '';
     form.image.value = '';
     form.price.value = '';
+    form.description.value = '';
     
     selectedItem = null;
   }
