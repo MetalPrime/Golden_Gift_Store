@@ -92,14 +92,16 @@ function sortProducts(list){
     case 'moreSize':
       list.sort(
         function(a,b){
-          return b.size - a.size;
+
+          return a.size > b.size ? 1: -1;
         }
     );
       break;
     case 'lessSize':
       list.sort(
         function(a,b){
-          return a.size - b.size;
+          console.log(b.size +""+ a.size)
+          return b.size > a.size ? 1: -1;
         }
     );
       break;
@@ -107,6 +109,7 @@ function sortProducts(list){
       list.sort(
         function(a,b){
           return b.numberItems - a.numberItems;
+          
         }
     );
       break;
