@@ -67,6 +67,61 @@ function renderProducts (list) {
   });
 }
 
+const sortNode = document.querySelector('.sort');
+const orders = sortNode.querySelector('select');
+console.log(orders);
+console.log(orders.options[orders.selectedIndex].value);
+
+function sortProducts(list){
+  
+  switch(orders.options[orders.selectedIndex].value){
+    case 'morePrice':
+      list.sort(
+        function(a,b){
+          return b.price - a.price;
+        }
+    );
+      break;
+    case 'lessPrice':
+      list.sort(
+        function(a,b){
+          return a.price - b.price;
+        }
+    );
+      break;
+    case 'moreSize':
+      list.sort(
+        function(a,b){
+          return b.size - a.size;
+        }
+    );
+      break;
+    case 'lessSize':
+      list.sort(
+        function(a,b){
+          return a.size - b.size;
+        }
+    );
+      break;
+    case 'lotProducts':
+      list.sort(
+        function(a,b){
+          return b.numberItems - a.numberItems;
+        }
+    );
+      break;
+    case 'littleProducts':
+      list.sort(
+        function(a,b){
+          return a.numberItems - b.numberItems;
+        }
+    );
+      break;
+  }
+  
+  
+}
+
 function getProducts(){
   productsRef  // referencia de la colección
   .get() // pide todos los documentos de la colección
@@ -79,6 +134,14 @@ function getProducts(){
         console.log(`${doc.id} => ${doc.data()}`);
     });
     renderProducts(objects);
+
+
+    orders.addEventListener('change',function(){
+      sortProducts(objects);
+      renderProducts(objects);
+    })
+
+    
     //loader.classList.remove('loader--show');
   });
 }

@@ -256,7 +256,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: chocolate;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
