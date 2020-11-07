@@ -30,12 +30,19 @@ body{
     width: 30%;
     height: 370px;
 
+    &__container{
+      height: 90%;
+    }
+
+    &__btn{
+      height: 10%;
+    }
     &__info{
       padding: 7px;
     }
     &__img {
       width: 100%;
-      height: 70%;
+      height: 80%;
       object-fit: cover;
       margin-right: 20px;
       border: 1px solid gray;
