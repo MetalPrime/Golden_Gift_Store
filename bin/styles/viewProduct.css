@@ -426,4 +426,8 @@ body {
             flex-direction: column;
   }
 }
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=viewProduct.css.map */

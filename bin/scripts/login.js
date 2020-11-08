@@ -9,7 +9,7 @@ login.addEventListener('submit', function (event) {
   firebase.auth().signInWithEmailAndPassword(email, password)
   .then(function () {
 
-    window.location.href = 'index.html';
+    window.location.href = 'store.html';
 
   })
   .catch(function(error) {
