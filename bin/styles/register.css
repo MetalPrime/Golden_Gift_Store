@@ -525,10 +525,6 @@ input[type=button] {
   display: block;
 }
 
-.form .hidden {
-  display: none;
-}
-
 .form__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,5 +546,9 @@ input[type=button] {
 
 .form h2 {
   padding-bottom: 14px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=register.css.map */
