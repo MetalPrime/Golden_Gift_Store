@@ -59,6 +59,26 @@ $text-size: 16px;
       
       }
 
+    &__error {
+        color: red;
+        font-weight: 600;
+
+    }
+    
+    
+    .loader {
+      display: none;
+    
+      &--show {
+        display: block;
+      }
+    }
+    
+    
+    .hidden {
+      display: none;
+    }
+
     &__btn{
       display: flex;
       justify-content: flex-end;

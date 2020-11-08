@@ -34,6 +34,7 @@ form.addEventListener('submit', function (event) {
     form.description.value = '';
     
     selectedItem = null;
+    window.location.href = 'store.html';
   }
 
   function handleCatch (error) {
