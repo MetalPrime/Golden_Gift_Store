@@ -11,6 +11,7 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -241,37 +242,9 @@ input[type=button] {
   zoom: 1;
 }
 
-header {
-  height: 100px;
-}
-
-header .auth {
-  height: 100%;
-}
-
 body {
   width: 100%;
   height: 100%;
-  background-color: #EAF8FF;
-  position: relative;
-}
-
-.productslist {
-  overflow: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.product {
-  border-bottom: 1px solid gray;
-  background-color: cornsilk;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,58 +252,56 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 10px;
-  padding-right: 0;
-  margin-bottom: 27px;
-  margin-right: 10px;
-  margin-left: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 30%;
-  height: 370px;
+  background-color: #EAF8FF;
 }
 
-.product__container {
-  height: 90%;
-}
-
-.product__btn {
-  height: 10%;
-}
-
-.product__info {
-  padding: 7px;
-}
-
-.product__img {
-  width: 100%;
-  height: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 20px;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-
-.product__title {
-  margin-top: 0px;
-}
-
-.store {
-  height: 100%;
+.info {
+  background-color: deepskyblue;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.store__products {
-  width: 100%;
+.info__img {
+  width: 30%;
+}
+
+.info__description {
+  width: 70%;
+  background-color: lawngreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info img {
+  height: 100%;
+  padding: 16px;
+}
+
+.order {
+  height: 70%;
+  background-color: darksalmon;
+}
+
+.btnReturn {
+  position: absolute;
+  margin: 10px;
 }
 
 .padding {
@@ -342,167 +313,12 @@ body {
   padding: 36px;
 }
 
-.navbar {
-  width: 100%;
-  height: 20%;
+.buttom {
+  width: 12.5rem;
   font-family: "Poppins", sans-serif;
+  background-color: #4088BD;
+  color: #ffffff;
   font-size: 16px;
-  padding-left: 6.375rem;
-  padding-right: 6.375rem;
+  border-radius: 30px;
 }
-
-.navbar ul {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.navbar ul li {
-  height: 100%;
-}
-
-.navbar ul li a {
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-}
-
-.navbar ul li a img {
-  width: auto;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding: 1rem;
-}
-
-.navbar ul li:last-of-type img {
-  width: auto;
-  height: 50%;
-}
-
-.navbar--store {
-  position: fixed;
-  background-color: rgba(31, 31, 31, 0.842);
-  top: 0%;
-  left: 0%;
-  height: 12%;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
-  .navbar ul {
-    display: none;
-  }
-  .navbar ul li:nth-of-type(3n+4) {
-    display: none;
-  }
-  .navbar--isActived {
-    display: -ms-grid;
-    display: grid;
-  }
-  .navbar--isActived ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.filter {
-  width: 20%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: whitesmoke;
-}
-
-.filter__section {
-  height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.filter__section h2 {
-  padding-left: 20px;
-  font-size: 19px;
-}
-
-.filter__section button {
-  background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  border: none;
-  text-align: left;
-  padding-left: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.filter__section button img {
-  height: 25px;
-  width: 25px;
-}
-
-.sort {
-  width: 70%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 12px;
-}
-
-.sort select {
-  border: none;
-  background: none;
-}
-
-.hidden {
-  display: none;
-}
-/*# sourceMappingURL=store.css.map */
+/*# sourceMappingURL=profile.css.map */

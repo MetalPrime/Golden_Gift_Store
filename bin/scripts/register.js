@@ -22,6 +22,7 @@ register.addEventListener('submit', function (event) {
         lastname: lastname,
         phone: phone,
         email: email,
+        id: uid,
       })
       .then(function () {
         window.location.href = 'index.html';

@@ -1,0 +1,49 @@
+@import '_reset';
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EAF8FF;
+  }
+
+.info{
+    background-color: deepskyblue;
+    height: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__img{
+        width: 30%;
+    }
+
+    &__description{
+        width: 70%;
+        background-color: lawngreen;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        height: 100%;
+        padding: 16px;
+    }
+}
+
+.order{
+    height: 70%;
+    background-color: darksalmon;
+}
+
+.btnReturn{
+    position: absolute;
+    margin: 10px;
+}
+
+@import '_padding.scss';
+@import '_buttom';

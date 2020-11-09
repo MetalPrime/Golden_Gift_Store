@@ -1,6 +1,7 @@
 const auth = document.querySelector('.auth');
 const authWith = auth.querySelector('.auth__with');
 const authWithout = auth.querySelector('.auth__without');
+const authProfile = auth.querySelector('.auth__profile');
 const authProfileSpan = auth.querySelector('.auth__profile span');
 const authSignout = auth.querySelector('.auth__signout');
 
@@ -19,6 +20,9 @@ firebase.auth().onAuthStateChanged(function(user) {
         const data = doc.data();
         userInfo = data;
         authProfileSpan.innerText = data.firstname;
+
+        const url = `profile.html?${data.id}`;
+        authProfile.setAttribute('href',url);
 
         if(data.admin) {
           const showAdmin = document.querySelectorAll('.showadmin');
