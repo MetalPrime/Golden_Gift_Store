@@ -13,6 +13,9 @@ window.addEventListener('load', function () {
  //referencia al storage
   const storageRef = firebase.storage().ref();
 
+  //referencia a la zona de pedidos del usuario
+  const wishsRef = db.collection('wish');
+
   //referencia al producto con el uid específico
   productsRef.doc(uid)
   .get() // traer info de ese producto
@@ -34,7 +37,43 @@ window.addEventListener('load', function () {
     
     document.querySelector('.itemProduct__price').innerText = `$ ${product.price}`;
 
+    //se añade un producto a la colección pedido, si el usuario está registrado
+    document.querySelector('.itemProduct__addBtn').addEventListener('click',function(event){
+      event.preventDefault();
+      firebase.auth().onAuthStateChanged(function(user) {
+        if(user){
+          productsRef.doc(uid).get().then(function(snapshot){
+
+            const newItemWish = {
+              title: snapshot.data().title,
+              img: snapshot.data().img,
+              price:  snapshot.data().price,
+              description :  snapshot.data().description,
+              categorie :  snapshot.data().categorie,
+              size :  snapshot.data().size,
+              numberItems :  snapshot.data().numberItems,
+              status:  snapshot.data().status,
+              focus :  snapshot.data().focus,
+              id : wishsRef.doc().id,
+              idUser : user.uid,
+            }
+
+            console.log(newItemWish);
+            wishsRef.add(newItemWish).then(function(){
+              window.location.href = 'checkout.html';
+            });
+          });
+
+
+        } else{
+          document.querySelector('.form__hidden').classList.remove('hidden');
+        }
+      });
+    });
+
+
+
     //document.querySelector('.details').classList.remove('hidden');
-  })
+  });
 
 });

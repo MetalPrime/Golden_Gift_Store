@@ -4,7 +4,6 @@ const authWithout = auth.querySelector('.auth__without');
 const authProfile = auth.querySelector('.auth__profile');
 const authProfileSpan = auth.querySelector('.auth__profile span');
 const authSignout = auth.querySelector('.auth__signout');
-const authAddProduct = document.querySelector('.auth__addProduct');
 
 var userInfo;
 
@@ -33,10 +32,12 @@ firebase.auth().onAuthStateChanged(function(user) {
         }
       }
     });
+
   } else {
     // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
     authWith.classList.add('hidden');
     authWithout.classList.remove('hidden');
+
   }
 });
 
