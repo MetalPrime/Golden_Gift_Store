@@ -24,6 +24,17 @@ $text-size: 16px;
 
     &__section {
       width: 33%;
+
+      &--double{
+        width: 66%;
+      }
+
+      &--triple{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   
     &__label {

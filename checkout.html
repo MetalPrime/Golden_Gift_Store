@@ -45,7 +45,7 @@
             <button class="buttom">Volver a la tienda</button>
             </div>
         </article>
-        <article class="steps__send">
+        <article class="hidden steps__send">
             <section>
                 <form class="form padding__section">
                     <h2 class="form__title">Datos de envio</h2>
@@ -110,6 +110,40 @@
         </article>
         <article class="hidden steps__pay">
             <section>
+                <section>
+                    <form class="form padding__section">
+                        <h2 class="form__title">Datos de envio</h2>
+                        <article class="form__article">
+                            <section class="form__section">
+                                <label class="form__label">
+                                    Nombre del pagante
+                                    <input name="" type="text">
+                                </label>
+                                <label class="form__label">
+                                    Teléfono
+                                    <input name="" type="text">
+                                </label>
+                                <label class="form__label">
+                                    E-mail
+                                    <input name="" type="text">
+                                </label>
+                                <label class="form__label">
+                                    Dirección
+                                    <input name="" type="text">
+                                </label>
+                            </section>
+                            <section class="form__section form__section--double">
+                                <p>Fecha Aproximada de recaudo</p>
+                                <br>
+                                <h1>Inserte Fecha Random</h1>
+                                <br>
+                                <p>Será informado por correo de el nombre de 
+                                    la persona a la cual entregar el dinero,
+                                    mantengase al tanto</p>
+                            </section>
+                        </article>
+                    </form>
+                </section>
 
             </section>
             <div class="buttons">
@@ -117,9 +151,20 @@
             <button class="buttom">Volver a envío</button>
             </div>
         </article>
-        <article class="hidden steps__result">
+        <article class="steps__result">
             <section>
-
+                <section>
+                    <form class="form padding__section">
+                        <article class="form__article">
+                            <section class="form__section form__section--triple">
+                                <img src="data/img/checkoutCorrect.svg" alt="checkoutCorrect">
+                                <p>Orden finalizada con éxito. Tu orden se encuentra almacenada 
+                                    en el siguiente registro # <strong>Código</strong>, para mayor información 
+                                    mantener el número provisto. Gracias por preferirnos.</p>
+                            </section>
+                        </article>
+                    </form>
+                </section>
             </section>
             <div class="buttons">
             <button class="buttom">Imprimir orden</button>

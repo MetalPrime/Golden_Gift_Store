@@ -44,6 +44,8 @@ window.addEventListener('load', function () {
         if(user){
           productsRef.doc(uid).get().then(function(snapshot){
 
+            const newWishRef =  wishsRef.doc();
+
             const newItemWish = {
               title: snapshot.data().title,
               img: snapshot.data().img,
@@ -54,12 +56,10 @@ window.addEventListener('load', function () {
               numberItems :  snapshot.data().numberItems,
               status:  snapshot.data().status,
               focus :  snapshot.data().focus,
-              id : wishsRef.doc().id,
               idUser : user.uid,
             }
 
-            console.log(newItemWish);
-            wishsRef.add(newItemWish).then(function(){
+            newWishRef.set(newItemWish).then(function(){
               window.location.href = 'checkout.html';
             });
           });

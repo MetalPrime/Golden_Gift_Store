@@ -57,6 +57,20 @@ body{
         right: 0;
     }
 
+    &__result{
+        display: flex;
+        justify-content: center;
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            right: auto;
+            width: 100%;
+            margin: auto 0;
+        }
+    }
+
 
 }
 
