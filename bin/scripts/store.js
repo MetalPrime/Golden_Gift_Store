@@ -35,6 +35,7 @@ function renderProducts (list) {
     <div class="product__btn">
       <button class="product__delete">Eliminar</button>
       <button class="product__edit">Editar</button>
+      <button class="product__add">Agregar al carrito</button>
     </div>
 
     `;

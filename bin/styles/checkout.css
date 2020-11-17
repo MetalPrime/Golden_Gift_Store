@@ -246,6 +246,11 @@ body {
   height: 100vh;
   background-color: #EAF8FF;
   position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
 }
 
 .titles {
@@ -338,6 +343,11 @@ body {
   margin: auto 0;
 }
 
+.steps__cartList {
+  height: 90%;
+  overflow: scroll;
+}
+
 .resume {
   width: 24.5%;
   height: 100%;
@@ -361,6 +371,40 @@ body {
 
 .resume form {
   width: 100%;
+}
+
+.resume article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.resume section {
+  width: 50%;
+}
+
+.cartItem {
+  background-color: yellow;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cartItem img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .padding {
@@ -435,6 +479,38 @@ body {
   top: 0%;
   left: 0%;
   height: 12%;
+}
+
+.auth {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auth div {
+  font-size: 16px;
+}
+
+.auth a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.auth img {
+  width: 15%;
 }
 
 @media screen and (max-width: 600px) {

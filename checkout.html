@@ -29,107 +29,122 @@
         <aside class="resume">
             <h1>Resumen</h1>
 
-            <p class="priceVanila">Productos</p>
-            <p class="tax">Impuesto</p>
-            <p class="sendPrice">Envío</p>
-            <p class="dicount">Descuento</p>
+            <article>
+                <section>
+                    <p class="priceVanila">Productos</p>
+                    <p class="tax">Impuesto</p>
+                    <p class="sendPrice">Envío</p>
+                    <p class="discount">Descuento</p>
+        
+                    <p class="total">Total</p>
+                </section>
+    
+                <section>
+                    <p class="priceVanilaNumber"></p>
+                    <p class="taxNumber"></p>
+                    <p class="sendPriceNumber"></p>
+                    <p class="discountNumber"></p>
+        
+                    <p class="totalNumber"></p>
+                </section>
+            </article>
 
-            <p class="total">Total</p>
         </aside>
-        <article class="hidden steps__cart">
-            <section>
+        <article class="steps__cart">
+            <section class="steps__cartList">
 
             </section>
             <div class="buttons">
-            <button class="buttom">Completar compra</button>
-            <button class="buttom">Volver a la tienda</button>
+            <button class="buttom steps__cartNext">Completar compra</button>
+            <button class="buttom steps__cartReturn">Volver a la tienda</button>
             </div>
         </article>
         <article class="hidden steps__send">
             <section>
-                <form class="form padding__section">
+                <form class="form form__one padding__section">
                     <h2 class="form__title">Datos de envio</h2>
                     <article class="form__article">
                         <section class="form__section">
                             <label class="form__label">
                                 Nombre del remitente
-                                <input name="" type="text">
+                                <input name="sendName" type="text" required>
                             </label>
                             <label class="form__label">
                                 Teléfono
-                                <input name="" type="text">
+                                <input name="sendPhone" type="text" required>
                             </label>
                             <label class="form__label">
                                 E-mail
-                                <input name="" type="text">
+                                <input name="sendEmail" type="text" required>
                             </label>
                             <label class="form__label">
                                 Dirección
-                                <input name="" type="text">
+                                <input name="sendDirection" type="text" required>
                             </label>
                         </section>
                         <section class="form__section">
                             <label class="form__label">
                                 Nombre del receptor
-                                <input name="" type="text">
+                                <input name="sendReceiver" type="text" required>
                             </label>
                             <label class="form__label">
                                 Teléfono
-                                <input name="" type="text">
+                                <input name="sendReceiverPhone" type="text" required>
                             </label>
                             <label class="form__label">
                                 E-mail
-                                <input name="" type="text">
+                                <input name="sendReceiverEmail" type="text" required>
                             </label>
                             <label class="form__label">
                                 Dirección
-                                <input name="" type="text">
+                                <input name="sendReceiverDirection" type="text" required>
                             </label>
                         </section>
                         <section class="form__section">
                             <label class="form__label">
                                 Mensaje para compartir
-                                <input name="" type="text">
+                                <input name="sendMsgShare" type="text" required>
                             </label>
                             <label class="form__label">
                                 Fecha de entrega
-                                <input name="" type="text">
+                                <input name="sendTime" type="text" required>
                             </label>
                             <label class="form__label">
                                 Hora de entrega
-                                <input name="" type="text">
+                                <input name="sendHour" type="text" required>
                             </label>
                         </section>
                     </article>
+                    <div class="buttons">
+                        <button class="buttom steps__sendNext">Completar compra</button>
+                        <button class="buttom steps__sendReturn">Volver a la canasta</button>
+                        </div>
                 </form>
             </section>
-            <div class="buttons">
-            <button class="buttom">Completar compra</button>
-            <button class="buttom">Volver a la canasta</button>
-            </div>
+
         </article>
         <article class="hidden steps__pay">
             <section>
                 <section>
-                    <form class="form padding__section">
+                    <form class="form form__two padding__section">
                         <h2 class="form__title">Datos de envio</h2>
                         <article class="form__article">
                             <section class="form__section">
                                 <label class="form__label">
                                     Nombre del pagante
-                                    <input name="" type="text">
+                                    <input name="payName" type="text" required>
                                 </label>
                                 <label class="form__label">
                                     Teléfono
-                                    <input name="" type="text">
+                                    <input name="payPhone" type="text" required>
                                 </label>
                                 <label class="form__label">
                                     E-mail
-                                    <input name="" type="text">
+                                    <input name="payEmail" type="text" required>
                                 </label>
                                 <label class="form__label">
                                     Dirección
-                                    <input name="" type="text">
+                                    <input name="payDirection" type="text" required>
                                 </label>
                             </section>
                             <section class="form__section form__section--double">
@@ -142,16 +157,17 @@
                                     mantengase al tanto</p>
                             </section>
                         </article>
+                        <div class="buttons">
+                            <button class="buttom steps__payNext">Completar compra</button>
+                            <button class="buttom steps__payReturn">Volver a envío</button>
+                            </div>
                     </form>
                 </section>
 
             </section>
-            <div class="buttons">
-            <button class="buttom">Completar compra</button>
-            <button class="buttom">Volver a envío</button>
-            </div>
+
         </article>
-        <article class="steps__result">
+        <article class="steps__result hidden">
             <section>
                 <section>
                     <form class="form padding__section">
@@ -167,11 +183,21 @@
                 </section>
             </section>
             <div class="buttons">
-            <button class="buttom">Imprimir orden</button>
-            <button class="buttom">Volver al inicio</button>
+            <button class="buttom steps__resultNext">Imprimir orden</button>
+            <button class="buttom steps__resultReturn">Volver al pago</button>
             </div>
         </article>
     </article>
     
 </body>
+
+<!--Firebase-->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+
+<script src="bin/scripts/firebase.js"></script>
+<script src="bin/scripts/checkout.js"></script>
+
 </html>

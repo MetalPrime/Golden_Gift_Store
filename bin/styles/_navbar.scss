@@ -63,6 +63,32 @@ $text-size: 16px;
 
 }
 
+.auth{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+      
+      font-size: 16px;
+  
+    }
+
+    a{
+        font-size: $text-size;
+        text-decoration: none;
+        color: rgb(255,255,255);
+        margin-right: 10px;
+    }
+
+
+
+    img{
+      width: 15%;
+    }
+  }
+
 @media screen and(max-width: 600px) {
     .navbar{
         display: none;
