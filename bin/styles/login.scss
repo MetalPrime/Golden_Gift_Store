@@ -2,7 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
 
+body{
+    background-color: #EAF8FF;
+}
 
+.login{
+    width: 500px;
+    z-index: 1;
+}
 
 @import '_padding.scss';
 @import '_buttom';

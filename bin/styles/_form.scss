@@ -6,10 +6,13 @@ $text-size: 16px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     border: 1px solid gray;
     border-radius: 5px;
     padding: 30px;
     background-color: whitesmoke;
+    box-shadow: 8px 3px 10px gray;
+    margin-bottom: auto;
 
     &__article {
       display: flex;
@@ -20,6 +23,7 @@ $text-size: 16px;
   
     &__title {
       margin-top: 0;
+      font-size: 22px;
     }
 
     &__section {

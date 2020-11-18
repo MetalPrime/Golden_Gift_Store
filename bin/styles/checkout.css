@@ -675,10 +675,14 @@ body ::-webkit-scrollbar {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  height: auto;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 30px;
   background-color: whitesmoke;
+  -webkit-box-shadow: 8px 3px 10px gray;
+          box-shadow: 8px 3px 10px gray;
+  margin-bottom: auto;
 }
 
 .form__article {
@@ -695,6 +699,7 @@ body ::-webkit-scrollbar {
 
 .form__title {
   margin-top: 0;
+  font-size: 22px;
 }
 
 .form__section {
