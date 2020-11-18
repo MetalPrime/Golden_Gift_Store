@@ -266,7 +266,7 @@ body ::-webkit-scrollbar {
 .titles section {
   width: 24.5%;
   height: 100%;
-  background-color: lightcoral;
+  background-color: white;
   font-size: 20px;
   padding: 16px;
   -webkit-box-shadow: 3px 3px 8px gray;
@@ -288,6 +288,10 @@ body ::-webkit-scrollbar {
   height: 60px;
 }
 
+.titles__cart--disable {
+  background-color: #ECE3C2 !important;
+}
+
 .steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,7 +304,6 @@ body ::-webkit-scrollbar {
 
 .steps article {
   width: 75%;
-  background-color: grey;
   margin-top: 24px;
   height: 100%;
   padding: 16px;
@@ -351,7 +354,9 @@ body ::-webkit-scrollbar {
 .resume {
   width: 24.5%;
   height: 100%;
-  background-color: green;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 8px gray;
+          box-shadow: 3px 3px 8px gray;
   padding: 16px;
   margin-top: 24px;
 }
@@ -386,7 +391,7 @@ body ::-webkit-scrollbar {
 }
 
 .cartItem {
-  background-color: yellow;
+  background-color: white;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,6 +403,8 @@ body ::-webkit-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 3px 3px 8px gray;
+          box-shadow: 3px 3px 8px gray;
 }
 
 .cartItem img {
@@ -405,6 +412,86 @@ body ::-webkit-scrollbar {
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .titles {
+    height: auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .titles section {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+  }
+  .titles section img {
+    display: none;
+  }
+  .titles section p {
+    display: none;
+  }
+  .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .steps article {
+    width: 100%;
+    padding: 0;
+  }
+  .resume {
+    width: 100%;
+    height: auto;
+  }
+  .resume h1 {
+    padding: 0;
+    font-size: 20px;
+  }
+  .resume section p {
+    display: none;
+    padding: 0;
+  }
+  .resume section p:last-of-type {
+    display: block;
+    padding: 0;
+  }
+  .cartItem {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px;
+  }
+  .cartItem img {
+    width: 75px;
+    height: 75px;
+  }
+  .cartItem h3 {
+    padding: 5px;
+  }
+  .cartItem__delete {
+    padding: 5px;
+  }
+  .buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .buttons button {
+    margin-bottom: 7px;
+  }
 }
 
 .padding {

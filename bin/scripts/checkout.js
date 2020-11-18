@@ -5,6 +5,11 @@ const wishRef = db.collection('wish');
 const storageRef = firebase.storage().ref();
 const orderRef = db.collection('order');
 
+const titles__cart = document.querySelector('.titles__cart');
+const titles__send = document.querySelector('.titles__send');
+const titles__pay = document.querySelector('.titles__pay');
+const titles__result = document.querySelector('.titles__result');
+
 const steps__cart = document.querySelector('.steps__cart');
 const steps__send = document.querySelector('.steps__send');
 const steps__pay = document.querySelector('.steps__pay');
@@ -28,6 +33,8 @@ const steps__resultReturn = steps__result.querySelector('.steps__resultReturn');
 steps__cartNext.addEventListener('click',function(){
     steps__cart.classList.add('hidden');
     steps__send.classList.remove('hidden');
+
+    titles__send.classList.add('titles__cart--disable');
 });
 
 steps__sendNext.addEventListener('click',function(){
@@ -37,7 +44,10 @@ steps__sendNext.addEventListener('click',function(){
 
         steps__send.classList.add('hidden');
         steps__pay.classList.remove('hidden');
+
+        titles__pay.classList.add('titles__cart--disable');
     });
+
 
 });
 
@@ -47,6 +57,8 @@ steps__payNext.addEventListener('click',function(){
     event.preventDefault();
     steps__pay.classList.add('hidden');
     steps__result.classList.remove('hidden');
+
+    titles__result.classList.add('titles__cart--disable');
     });
 });
 
@@ -116,17 +128,21 @@ steps__sendReturn.addEventListener('click',function(){
         steps__send.classList.add('hidden');
         steps__cart.classList.remove('hidden');
     
-
+        titles__send.classList.remove('titles__cart--disable');
 });
 
 steps__payReturn.addEventListener('click',function(){
     steps__pay.classList.add('hidden');
     steps__send.classList.remove('hidden');
+
+    titles__pay.classList.remove('titles__cart--disable');
 });
 
 steps__resultReturn.addEventListener('click',function(){
     steps__result.classList.add('hidden');
     steps__pay.classList.remove('hidden');
+
+    titles__result.classList.remove('titles__cart--disable');
 });
 
 

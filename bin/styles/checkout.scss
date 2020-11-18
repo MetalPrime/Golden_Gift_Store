@@ -21,7 +21,7 @@ body{
     section{
         width: 24.5%;
         height: 100%;
-        background-color: lightcoral;
+        background-color: white;
         font-size: 20px;
         padding: 16px;
         box-shadow: 3px 3px 8px gray;
@@ -35,6 +35,12 @@ body{
 
 
     }
+
+    &__cart{
+        &--disable{
+            background-color: #ECE3C2 !important;
+        }
+    }
 }
 
 .steps{
@@ -44,7 +50,6 @@ body{
 
     article{
         width: 75%;
-        background-color: grey;
         margin-top: 24px;
         height: 100%;
         padding: 16px;
@@ -87,7 +92,8 @@ body{
 .resume{
     width: 24.5%;
     height: 100%;
-    background-color: green;
+    background-color:white;
+    box-shadow: 3px 3px 8px gray;
     padding: 16px;
     margin-top: 24px;
 
@@ -125,16 +131,97 @@ body{
 
 .cartItem{
 
-    background-color: yellow;
+    background-color:white;
     margin-bottom: 10px;
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 3px 3px 8px gray;
+
     img{
         width: 100px;
         height: 100px;
         object-fit: cover;
+    }
+}
+
+@media screen and(max-width: 600px){
+    .titles{
+        height: auto;
+        justify-content: space-evenly;
+        section{
+
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+
+            img{
+                display: none;
+            }
+
+            p{
+                display: none;
+            }
+        }
+    }
+    .steps{
+        flex-direction: column-reverse;
+
+        article{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    .resume{
+        width: 100%;
+        height: auto;
+        h1{
+            padding: 0;
+            font-size: 20px;
+        }
+        section{
+            p{
+                display: none;
+                padding: 0;
+
+                &:last-of-type{
+                    display: block;
+                    padding: 0;
+                }
+            }
+        }
+        
+    }
+
+    .cartItem{
+        width: 100%;
+        font-size: 14px;
+        padding: 6px;
+
+        img{
+            width: 75px;
+            height: 75px;
+        }
+
+        h3{
+            padding: 5px;
+        }
+
+        &__delete{
+            padding: 5px;
+        }
+    }
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button{
+            margin-bottom: 7px;
+        }
     }
 }
 
