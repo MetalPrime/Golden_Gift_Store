@@ -265,6 +265,7 @@ main {
   font-size: 16px;
   padding-left: 6.375rem;
   padding-right: 6.375rem;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -1542,12 +1543,13 @@ footer {
 }
 
 .buttom {
-  width: 12.5rem;
+  width: 10rem;
   font-family: "Poppins", sans-serif;
   background-color: #4088BD;
   color: #ffffff;
   font-size: 16px;
   border-radius: 30px;
+  border: none;
 }
 
 .input {

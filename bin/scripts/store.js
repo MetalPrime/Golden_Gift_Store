@@ -33,12 +33,16 @@ function renderProducts (list) {
     </div>
     </a>
     <div class="product__btn">
-      <button class="product__delete">Eliminar</button>
-      <button class="product__edit">Editar</button>
-      <button class="product__add">Agregar al carrito</button>
+      <button class="product__delete">X</button>
+      <button class="product__edit"><img src="./data/img/edit.svg" alt="imgEdit"></button>
+      <button class="product__add buttom">Agregar</button>
     </div>
 
     `;
+
+
+
+
 
     // seleccionamos el botón "Eliminar" que se acaba de crear en este elemento
     const deleteBtn = newProduct.querySelector('.product__delete');

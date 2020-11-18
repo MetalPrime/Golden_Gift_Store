@@ -2,10 +2,11 @@ $principal-font : 'Poppins', sans-serif;
 $text-size: 16px;
 
 .buttom{
-    width: 12.5rem;
+    width: 10rem;
     font-family: $principal-font;
     background-color: #4088BD;
     color: #ffffff;
     font-size: $text-size;
     border-radius: 30px;
+    border: none;
 }

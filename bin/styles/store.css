@@ -246,6 +246,7 @@ body {
   height: 100%;
   background-color: #EAF8FF;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 body ::-webkit-scrollbar {
@@ -286,6 +287,11 @@ body ::-webkit-scrollbar {
       flex-wrap: wrap;
   width: 30%;
   height: 370px;
+  position: relative;
+}
+
+.product a {
+  text-decoration: none;
 }
 
 .product__container {
@@ -299,6 +305,34 @@ body ::-webkit-scrollbar {
 
 .product__delete {
   position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.product__edit {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.product__edit img {
+  width: 15px;
+}
+
+.product__add {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .product__info {
@@ -334,6 +368,21 @@ body ::-webkit-scrollbar {
   width: 100%;
 }
 
+.addBtn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: deepskyblue;
+  font-size: 40px;
+  border-radius: 60px;
+  border: none;
+}
+
+.addBtn a {
+  text-decoration: none;
+  color: white;
+}
+
 .padding {
   height: 100vh;
   padding: 89px;
@@ -350,6 +399,7 @@ body ::-webkit-scrollbar {
   font-size: 16px;
   padding-left: 6.375rem;
   padding-right: 6.375rem;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -537,5 +587,15 @@ body ::-webkit-scrollbar {
 
 .hidden {
   display: none;
+}
+
+.buttom {
+  width: 10rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #4088BD;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
 }
 /*# sourceMappingURL=store.css.map */

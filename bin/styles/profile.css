@@ -314,11 +314,12 @@ body {
 }
 
 .buttom {
-  width: 12.5rem;
+  width: 10rem;
   font-family: "Poppins", sans-serif;
   background-color: #4088BD;
   color: #ffffff;
   font-size: 16px;
   border-radius: 30px;
+  border: none;
 }
 /*# sourceMappingURL=profile.css.map */
