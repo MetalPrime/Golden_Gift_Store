@@ -86,7 +86,41 @@ body{
     }
 }
 
+@media screen and(max-width: 600px){
+    .itemProduct{
+
+        flex-direction:column-reverse;
+        &__img{
+            width: 100%;
+        }
+
+        &__info{
+            width: 100%;
+        }
+
+        &__title{
+            font-size: 20px;
+        }
+
+        &__category{
+            font-size: 14px;
+        }
+
+        &__description{
+            font-size: 14px;
+        }
+        &__carrousel{
+            display: none;
+        }
+
+        &__addBtn{
+            width: 30px;
+        }
+    }
+}
+
 @import '_padding.scss';
 @import '_navbar.scss';
+@import '_burgermenu.scss';
 @import '_hidden.scss';
 @import '_buttom.scss';
