@@ -9,3 +9,13 @@
 
 
 }
+
+@media screen and(max-width: 600px){
+    .padding{
+        padding: 20px;
+        height: 100vh;
+        &__section{
+            padding: 12px;
+        }
+    }
+}

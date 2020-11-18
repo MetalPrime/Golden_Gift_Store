@@ -157,7 +157,7 @@ function renderItemsCarts (list) {
         <img class="carItem__img" src="" alt="imgProduct">
         <h3 class="carItem__title">${element.title}</h3>
         <p class="cartItem__price">$ ${element.price}</p>
-        <button class="carItem__delete">Eliminar</button>
+        <button class="carItem__delete buttom">Eliminar</button>
         `;
 
         const carItem__delete = newCartItem.querySelector('.carItem__delete');
@@ -172,6 +172,7 @@ function renderItemsCarts (list) {
                   // debería entrar si todo sale bien
                   console.log("Document successfully deleted!");
                   getCarItems(); // traiga los productos cuando estemos seguros de que ya eliminó el que le dijimos
+                  
                 })
                 .catch(function(error) {
                   // debería entrar si ocurre algún error
@@ -218,6 +219,9 @@ function getCarItems(){
         objects.push(obj);
 
     });
+    window.addEventListener('load',function (event) {
+                      
+    })
     renderItemsCarts(objects);
 });
 

@@ -8,45 +8,44 @@
 </head>
 
 <header>
-
+        <section class="burgermenu burgermenu--store">
+            <img src="./data/img/Logo Png.png" alt="Logo" class="burgermenu__logo">
+            <button class="burgermenu__btn" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </section>
+        <nav class="navbar  navbar--store ">
+            <ul>
+                <li><a href="./store.html">Tienda</a></li>
+                <li><a href="#">Conócenos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="./index.html"><img src="./data/img/Logo Png.png" alt="Logo"></a></li>
+                <div class="auth">
+                    <img src="data/img/user.svg" alt="user">
+                    <div class="auth__without hidden">
+                        <a href="./login.html">Iniciar sesión</a>
+                        <a href="./register.html">Registrarse</a>
+                      </div>
+                      <div class="auth__with hidden">
+                        <a href="./profile.html" class="auth__profile">    
+                          <span></span>
+                        </a>
+                        <a href="#" class="auth__signout">
+                          Cerrar sesión
+                        </a>
+                      </div>
+                </div>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="./checkout.html"><img src="./data/img/carshop.svg" alt="carshop"></a></li>
+            </ul>
+        
+        </nav>
 </header>
-<body class="padding">
-    <section class="burgermenu burgermenu--store">
-        <img src="./data/img/Logo Png.png" alt="Logo" class="burgermenu__logo">
-        <button class="burgermenu__btn" >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </section>
-    <nav class="navbar  navbar--store ">
-        <ul>
-            <li><a href="./store.html">Tienda</a></li>
-            <li><a href="#">Conócenos</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="./index.html"><img src="./data/img/Logo Png.png" alt="Logo"></a></li>
-            <div class="auth">
-                <img src="data/img/user.svg" alt="user">
-                <div class="auth__without hidden">
-                    <a href="./login.html">Iniciar sesión</a>
-                    <a href="./register.html">Registrarse</a>
-                  </div>
-                  <div class="auth__with hidden">
-                    <a href="./profile.html" class="auth__profile">    
-                      <span></span>
-                    </a>
-                    <a href="#" class="auth__signout">
-                      Cerrar sesión
-                    </a>
-                  </div>
-            </div>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="./checkout.html"><img src="./data/img/carshop.svg" alt="carshop"></a></li>
-        </ul>
-    
-    </nav>
+<body>
 
- <article class="store">
+<article class="store padding">
     <aside class="filter">
         <section class="filter__section">
             <h2>Categorias</h2>
@@ -68,6 +67,12 @@
            <button class="middleSizeBtn">Mediana</button>
            <button class="lotSizeBtn">Grande</button>
         </section>
+        <section class="filter__section filter--responsive">
+            <button class="snackBtn"><img src="./data/img/merienda.svg" alt="merienda"></button>
+            <button class="breakfastBtn"><img src="./data/img/desayuno.svg" alt="desayuno"></button>
+            <button class="trayBtn"><img src="./data/img/bandeja.svg" alt="bandeja"></button>
+            <button class="basketBtn"><img src="./data/img/ancheta.svg" alt="ancheta"></button>
+        </section>
     </aside>
     
     <section class="store__products padding__section">
@@ -83,6 +88,8 @@
                 <option value="littleProducts">Pocos items</option>
             </select>
         </section>
+
+
       
         <section class="productslist">
 

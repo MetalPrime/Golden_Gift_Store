@@ -374,6 +374,8 @@ body ::-webkit-scrollbar {
 
 .addBtn {
   position: fixed;
+  bottom: 40px;
+  right: 40px;
   width: 60px;
   height: 60px;
   background-color: deepskyblue;
@@ -387,6 +389,45 @@ body ::-webkit-scrollbar {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product {
+    width: 100%;
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .product__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product__img {
+    width: 25%;
+    height: auto;
+  }
+  .product__info {
+    width: 50%;
+    margin-right: 0;
+  }
+  .addBtn {
+    font-size: 20px;
+  }
+}
+
 .padding {
   height: 100vh;
   padding: 89px;
@@ -394,6 +435,16 @@ body ::-webkit-scrollbar {
 
 .padding__section {
   padding: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .padding {
+    padding: 20px;
+    height: 100vh;
+  }
+  .padding__section {
+    padding: 12px;
+  }
 }
 
 .navbar {
@@ -670,6 +721,45 @@ body ::-webkit-scrollbar {
   width: 25px;
 }
 
+.filter--responsive {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .filter__section {
+    display: none;
+  }
+  .filter__section button {
+    width: auto;
+  }
+  .filter__section button img {
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    padding: 5px;
+    -webkit-box-shadow: 8px 3px 10px gray;
+            box-shadow: 8px 3px 10px gray;
+  }
+  .filter--responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .sort {
   width: 70%;
   height: auto;
@@ -700,5 +790,11 @@ body ::-webkit-scrollbar {
   font-size: 16px;
   border-radius: 30px;
   border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .buttom {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=store.css.map */

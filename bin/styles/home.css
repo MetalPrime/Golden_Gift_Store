@@ -1556,6 +1556,12 @@ footer {
   border: none;
 }
 
+@media screen and (max-width: 600px) {
+  .buttom {
+    font-size: 12px;
+  }
+}
+
 .input {
   width: 12.5rem;
   font-family: "Poppins", sans-serif;

@@ -3,6 +3,9 @@
   const db = firebase.firestore();
   const productsRef = db.collection('products');
   const storageRef = firebase.storage().ref();
+
+    //referencia a la zona de pedidos del usuario
+    const wishsRef = db.collection('wish');
   
   const productsList = document.querySelector('.productslist');
 // creación de nuevos productos a partir de la lista
@@ -71,6 +74,39 @@ function renderProducts (list) {
       form.price.value = elem.price;
       selectedItem = elem;
     });
+
+    const addBtn = newProduct.querySelector('.product__add');
+        //se añade un producto a la colección pedido, si el usuario está registrado
+        addBtn.addEventListener('click',function(event){
+          event.preventDefault();
+          firebase.auth().onAuthStateChanged(function(user) {
+            if(user){    
+                const newWishRef =  wishsRef.doc();
+    
+                const newItemWish = {
+                  title: elem.title,
+                  img: elem.img,
+                  price:  elem.price,
+                  description :  elem.description,
+                  categorie :  elem.categorie,
+                  size :  elem.size,
+                  numberItems :  elem.numberItems,
+                  status:  elem.status,
+                  focus :  elem.focus,
+                  idUser : user.uid,
+                }
+    
+                newWishRef.set(newItemWish).then(function(){
+                  window.location.href = 'checkout.html';
+                });
+              
+    
+    
+            } else{
+              alert("Por favor, inicie sesión");
+            }
+          });
+        });
 
     productsList.appendChild(newProduct);
   });

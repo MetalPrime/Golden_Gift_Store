@@ -260,6 +260,16 @@ body {
   padding: 36px;
 }
 
+@media screen and (max-width: 600px) {
+  .padding {
+    padding: 20px;
+    height: 100vh;
+  }
+  .padding__section {
+    padding: 12px;
+  }
+}
+
 .buttom {
   width: 11rem;
   font-family: "Poppins", sans-serif;
@@ -268,6 +278,12 @@ body {
   font-size: 16px;
   border-radius: 30px;
   border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .buttom {
+    font-size: 12px;
+  }
 }
 
 .products {

@@ -63,6 +63,11 @@ form.addEventListener('submit', function (event) {
   }*/
 });
 
+const cancelProduct = document.querySelector('.auth__cancelProduct');
+cancelProduct.addEventListener('click',function () {
+  window.location.href = 'store.html';
+})
+
 
 
 
