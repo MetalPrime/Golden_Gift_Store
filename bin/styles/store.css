@@ -683,6 +683,9 @@ body ::-webkit-scrollbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: whitesmoke;
+  -webkit-box-shadow: 8px 3px 10px gray;
+          box-shadow: 8px 3px 10px gray;
+  margin-top: 2.5%;
 }
 
 .filter__section {
