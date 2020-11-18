@@ -268,6 +268,9 @@ body ::-webkit-scrollbar {
 
 .product {
   border-bottom: 1px solid gray;
+  -webkit-box-shadow: 8px 3px 10px gray;
+          box-shadow: 8px 3px 10px gray;
+  border-radius: 5px;
   background-color: cornsilk;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,6 +365,7 @@ body ::-webkit-scrollbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 
 .store__products {
@@ -515,6 +519,105 @@ body ::-webkit-scrollbar {
   }
 }
 
+.burgermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burgermenu--store {
+  background-color: rgba(31, 31, 31, 0.842);
+}
+
+.burgermenu__logo {
+  display: none;
+  width: 35%;
+  padding: 1.594rem;
+}
+
+.burgermenu__btn {
+  border: 0px;
+  border-color: transparent;
+  right: 0;
+  padding: 25px;
+  position: absolute;
+  display: none;
+  background-color: transparent;
+}
+
+.burgermenu__btn span {
+  background-color: aliceblue;
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.burgermenu__btn span:nth-child(1),
+.burgermenu__btn span:nth-child(3) {
+  -webkit-transition: -webkit-transform .35s ease-in-out;
+  transition: -webkit-transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+}
+
+.burgermenu__btn--clicked span:nth-child(1),
+.burgermenu__btn--clicked span:nth-child(3) {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.burgermenu__btn--clicked span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.burgermenu__btn--clicked span:nth-child(3) {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.burgermenu__btn--collapsed span:nth-child(1),
+.burgermenu__btn--collapsed span:nth-child(3) {
+  -webkit-transition: -webkit-transform .35s ease-in;
+  transition: -webkit-transform .35s ease-in;
+  transition: transform .35s ease-in;
+  transition: transform .35s ease-in, -webkit-transform .35s ease-in;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .burgermenu__logo {
+    display: block;
+  }
+  .burgermenu__btn {
+    display: block;
+  }
+}
+
 .filter {
   width: 20%;
   height: 100%;
@@ -590,7 +693,7 @@ body ::-webkit-scrollbar {
 }
 
 .buttom {
-  width: 10rem;
+  width: 11rem;
   font-family: "Poppins", sans-serif;
   background-color: #4088BD;
   color: #ffffff;

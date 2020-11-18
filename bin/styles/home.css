@@ -398,6 +398,10 @@ main {
           align-items: center;
 }
 
+.burgermenu--store {
+  background-color: rgba(31, 31, 31, 0.842);
+}
+
 .burgermenu__logo {
   display: none;
   width: 35%;
@@ -1543,7 +1547,7 @@ footer {
 }
 
 .buttom {
-  width: 10rem;
+  width: 11rem;
   font-family: "Poppins", sans-serif;
   background-color: #4088BD;
   color: #ffffff;
