@@ -50,7 +50,7 @@ window.addEventListener('load', function () {
         })
         .then(function() {
             console.log("Document successfully updated!");
-    
+            window.location.href = 'store.html';
         })
         .catch(function(error) {
             // The document probably doesn't exist.
