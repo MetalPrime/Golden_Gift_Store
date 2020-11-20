@@ -340,6 +340,8 @@ body ::-webkit-scrollbar {
 
 .product__info {
   padding: 7px;
+  padding-left: 16px;
+  color: black;
 }
 
 .product__img {
