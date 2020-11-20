@@ -827,6 +827,11 @@ body ::-webkit-scrollbar {
   height: 87%;
 }
 
+.form__label img {
+  width: 40%;
+  margin: 0 auto;
+}
+
 .form__label--thirdColumn {
   margin-right: 0%;
 }
