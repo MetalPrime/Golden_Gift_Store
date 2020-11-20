@@ -23,11 +23,19 @@ firebase.auth().onAuthStateChanged(function(user) {
 
         const url = `profile.html?${data.id}`;
         authProfile.setAttribute('href',url);
+        console.log(data.admin);
 
         if(data.admin) {
           const showAdmin = document.querySelectorAll('.showadmin');
           showAdmin.forEach(function(elem) {
             elem.classList.remove('hidden');
+            console.log("it's admin");
+          });
+        } else{
+          const showAdmin = document.querySelectorAll('.showadmin');
+          showAdmin.forEach(function(elem) {
+            elem.classList.add('hidden');
+            console.log("it's not admin");
           });
         }
       }
@@ -37,6 +45,11 @@ firebase.auth().onAuthStateChanged(function(user) {
     // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
     authWith.classList.add('hidden');
     authWithout.classList.remove('hidden');
+    const showAdmin = document.querySelectorAll('.showadmin');
+          showAdmin.forEach(function(elem) {
+            elem.classList.add('hidden');
+            console.log("it's not admin");
+          });
 
   }
 });
