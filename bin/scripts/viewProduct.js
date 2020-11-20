@@ -30,7 +30,6 @@ window.addEventListener('load', function () {
         // Or inserted into an <img> element:
         
         document.querySelector('.itemProduct__img').style.backgroundImage = `url(${url})`;
-        
       }).catch(function(error) {
         // Handle any errors
       });
