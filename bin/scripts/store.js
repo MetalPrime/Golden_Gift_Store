@@ -36,8 +36,8 @@ function renderProducts (list) {
     </div>
     </a>
     <div class="product__btn">
-      <button class="product__delete">X</button>
-      <button class="product__edit"><img src="./data/img/edit.svg" alt="imgEdit"></button>
+      <button class="product__delete showadmin">X</button>
+      <button class="product__edit showadmin"><img src="./data/img/edit.svg" alt="imgEdit"></button>
       <button class="product__add buttom">Agregar</button>
     </div>
 
@@ -69,10 +69,8 @@ function renderProducts (list) {
     // al hacer click al botón de editar
     const editBtn = newProduct.querySelector('.product__edit');
     editBtn.addEventListener('click', function() {
-      form.title.value = elem.title;
-      form.image.value = elem.img;
-      form.price.value = elem.price;
-      selectedItem = elem;
+      const url = `editProduct.html?${elem.id}`
+      window.location.href = url;
     });
 
     const addBtn = newProduct.querySelector('.product__add');

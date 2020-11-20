@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bin/styles/addProduct.css">
+</head>
+<body class="padding">
+
+    <form class="form  padding__section">
+      <h2 class="form__title">Editar producto</h2>
+
+      <article class="form__article">
+        <section class="form__section">
+          <label class="form__label">
+            Nombre del producto
+            <input name="title" type="text">
+          </label>
+      
+          <label class="form__label form__label--description">
+            Descripción del producto
+            <textarea name="description"></textarea>
+          </label>
+        </section>
+        <section class="form__section">
+          <label class="form__label">
+            Precio del producto
+            <input name="price" type="number">
+          </label>
+    
+          <label class="form__label">
+            Categoria del producto
+            <select name="categories">
+              <option value = "Desayuno" name="breakfast">Desayuno</option>
+              <option value = "Merienda" name="snack">Merienda</option>
+              <option value = "Ancheta" name="basket">Ancheta</option>
+              <option value = "Bandeja" name="tray">Bandeja</option>
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Tamaño del producto
+            <select name="size">
+              <option value="little">Pequeña</option>
+              <option value="middle">Mediana</option>
+              <option value="big">Grande</option>
+
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Número de items
+            <select name="numberItems">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Status del producto
+            <select name="status">
+              <option value="new">Nuevos</option>
+              <option value="favorite">Favoritos</option>
+              <option value="discount">Descuento</option>
+            </select>
+          </label>
+    
+          <label class="form__label">
+            Enfoque del producto
+            <select name="focus">
+              <option value="couple">Pareja</option>
+              <option value="familie">Familiar</option>
+              <option value="friend">Amigo</option>
+              <option value="partner">Compañero</option>
+              <option value="child">Hijo</option>
+              <option value="lover">Moza</option>
+            </select>
+          </label>
+    
+        </section>
+        <section class="form__section">
+          <label class="form__label--thirdColumn">
+            Imágenes
+            <img src="data/img/imgBase.png" alt="imgBase">
+            <input type="file" name="image" >
+
+            <section>
+              <img src="data/img/imgBase.png" alt="imgBase">
+              <img src="data/img/imgBase.png" alt="imgBase">
+              <img src="data/img/imgBase.png" alt="imgBase">
+            </section>
+          </label>
+        </section>
+      </article>
+
+      <section class="form__btn">
+        <button class="buttom auth__cancelProduct">
+          Cancelar edición
+        </button>
+        <button class="buttom auth__addProduct">
+          Editar producto
+        </button>
+      </section>
+     
+    </form>
+  
+</body>
+
+<!--Firebase-->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-storage.js"></script>
+<script src="bin/scripts/firebase.js"></script>
+<script src="bin/scripts/editProduct.js"></script>
+
+</html>
